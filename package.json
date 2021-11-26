@@ -21,7 +21,7 @@
     "heroku"
   ],
   "author": "John Maitz",
-  "license": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jmaitz/twilio-sfmc/issues"
   },
@@ -37,5 +37,10 @@
     "simple-telegram-message": "^1.4.1",
     "twilio": "^3.36.0",
     "uglify-js": "^3.6.4"
-  }
+  },
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
