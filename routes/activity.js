@@ -132,9 +132,16 @@ exports.execute = function (req, res) {
     //        .then(message => console.log(message.sid)) 
     //        .done(); 
     // FOR TESTING
-    logData(req);
+    try{
+        console.log('in the testing publish');
+        logData(req);
     //res.send(200, 'Publish');
     res.status(200).send('Publish');
+    }
+    catch(er)
+    {
+        console.log('coming into err'+ er);
+    }
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
@@ -174,10 +181,16 @@ exports.publish = function (req, res) {
     
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
+    try{
+
+    
      logData(req);
     // res.send(200, 'Publish');
     res.status(200).send('Publish');
      console.log("coming to publish");
+    }catch(er){
+        console.log('error in the publish');
+    }
 };
 
 /*
