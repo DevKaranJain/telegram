@@ -175,7 +175,8 @@ exports.publish = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
      logData(req);
-     res.send(200, 'Publish');
+    // res.send(200, 'Publish');
+    res.status(200).send('Publish');
      console.log("coming to publish");
 };
 
