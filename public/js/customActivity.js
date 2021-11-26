@@ -138,8 +138,8 @@ define([
                     }
                     
                 }
-                
-                else if ((currentStep.key === 'step3' && steps[3].active === false)) 
+                //&& steps[3].active === false
+                else if ((currentStep.key === 'step3' )) 
                 {
                      save();
                 }
