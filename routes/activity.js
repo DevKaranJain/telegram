@@ -114,7 +114,7 @@ exports.execute = function (req, res) {
     const body = requestBody.body;
     try{
         const { sendMessageFor } = require('simple-telegram-message')
-    const sendMessage = sendMessageFor('2026995123:AAH9hs5SWKHYZ1Z2nuDkFR5PsQe2Fit2grws','-526739583')
+    const sendMessage = sendMessageFor('2026995123:AAEiuLl1CTf_0nv8X3yr4CZ66O-oq2xw3kE','-526739583')
     sendMessage(`Hi from bot! and i am hit from journey builder `)
     .then(console.log)
     .catch(console.err)
