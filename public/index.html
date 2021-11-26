@@ -39,7 +39,7 @@
 
 </head>
 <body>
-<div id="step1" class="step">
+<!-- <div id="step1" class="step">
     <h2>Create a Twilio SMS message:</h2>
     <p>Twilio's Programmable SMS has the features you’ll need to build quickly and scale to production. We’ve solved the hard problems so you don’t have to.  <a href="https://www.twilio.com/sms" target="_blank">Learn more about about Twilio SMS here</a>.</p>
     <hr>
@@ -51,15 +51,59 @@
         <div><label for="messageBody">Create message body:</label></div>
         <input class="form-control" id="messageBody" type="text" name="messageBody" value="Hey this side is KARAN">        
     </div>           
-    <!-- <div class="form-group">
+    <div class="form-group">
         <div><label for="messagingService">Messaging Service SID:</label></div>
         <input class="form-control" id="messagingService" type="text" name="messagingService" value="MGf232a4f33d17d0de947257b32a385dbc">
     </div>     
     <div class="form-group">
         <div><label for="accountSID">Account SID:</label></div>
         <input class="form-control" id="accountSid" type="text" name="accountSID" value="AC70b05daaa72f9a7a87d2bc6fc36408a2">
-    </div> -->
-   
+    </div>
+ -->
+
+    <div id="step1" class="step">
+        <div class="slds-text-heading_small instruction">Enter Bot Token </div>
+            <br>
+        <!-- enter twilio authentication details-->
+            <div class="form-group" >  
+                <div id = "error"></div> 
+            </div> 
+            <div class="form-group">
+                <div><label for="authToken">Auth Token:<span class="required" style = "color: red">*</span></label></div>
+                <input class="form-control" id="authToken" type="text" name="authToken" value="" required="true" aria-describedby="required-description"> 
+            </div> 
+         </div>
+
+         <!-- step  2  -->
+
+         <div id="step1" class="step">
+            <div class="slds-text-heading_small instruction"> User / group  chat id .</div>
+                <br>
+            <!-- enter twilio authentication details-->
+                <div class="form-group" >  
+                    <div id = "messageBodyNull"></div> 
+                </div>
+             
+    
+                <div class="form-group">
+                    <div><label for="messageBody">Enter message :<span class="required" style = "color: red">*</span></label></div>
+                    <input class="form-control" id="messageBody" type="text" name="messageBody" value="" required="true" aria-describedby="required-description">        
+                </div>  
+         </div>
+         <!-- step 3  -->
+         <div id="step3" class="step">
+            <div class="slds-text-heading_small instruction">Enter Message for the User .</div>
+                <br>
+          
+                <div class="form-group" >  
+                    <div id = "messageBodyNull"></div> 
+                </div>
+             
+                <div class="form-group">
+                    <div><label for="messageBody">Create message body 3:<span class="required" style = "color: red">*</span></label></div>
+                    <input class="form-control" id="messageBody3" type="text" name="messageBody" value="" required="true" aria-describedby="required-description">        
+                </div>   
+         </div>
 
 </div>
 </body>
