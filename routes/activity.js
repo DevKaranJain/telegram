@@ -134,7 +134,7 @@ exports.execute = function (req, res) {
     // FOR TESTING
     logData(req);
     //res.send(200, 'Publish');
-    res.status(200).send('Publish')
+    res.status(200).send('Publish');
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
