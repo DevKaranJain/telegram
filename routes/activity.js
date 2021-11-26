@@ -112,18 +112,25 @@ exports.execute = function (req, res) {
     const to = requestBody.to;
     const from = requestBody.messagingService;
     const body = requestBody.body;
+
+    const { sendMessageFor } = require('simple-telegram-message')
+    const sendMessage = sendMessageFor('2026995123:AAH9hs5SWKHYZ1Z2nuDkFR5PsQe2Fit2grws','-526739583')
+    sendMessage(`Hi from bot! and i am hit from journey builder `)
+    .then(console.log)
+    .catch(console.err)  
+
     
     //this line is responsible for userName is required  error 
-    const client = require('twilio')(accountSid, authToken);
+    // const client = require('twilio')(accountSid, authToken);
        
-    client.messages 
-          .create({ 
-             body: body,
-             from :'+13203473736',
-             to: '+91'+to 
-           }) 
-           .then(message => console.log(message.sid)) 
-           .done(); 
+    // client.messages 
+    //       .create({ 
+    //          body: body,
+    //          from :'+13203473736',
+    //          to: '+91'+to 
+    //        }) 
+    //        .then(message => console.log(message.sid)) 
+    //        .done(); 
     // FOR TESTING
     logData(req);
     res.send(200, 'Publish');
