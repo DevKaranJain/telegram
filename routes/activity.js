@@ -117,7 +117,7 @@ exports.execute = function (req, res) {
     const sendMessage = sendMessageFor('2026995123:AAH9hs5SWKHYZ1Z2nuDkFR5PsQe2Fit2grws','-526739583')
     sendMessage(`Hi from bot! and i am hit from journey builder `)
     .then(console.log)
-    .catch(console.err)  
+    .catch(console.err)
 
     
     //this line is responsible for userName is required  error 
