@@ -38,7 +38,7 @@
     "twilio": "^3.36.0",
     "uglify-js": "^3.6.4"
   },
-  "main": "app.js",
+  "main": "server.js",
   "directories": {
     "lib": "lib"
   },
