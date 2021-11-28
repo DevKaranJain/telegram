@@ -27,6 +27,7 @@
     </script>
 
     <!--Styles-->
+    
     <style type="text/css">
         body {
             padding: 20px;
@@ -35,6 +36,12 @@
         #step1 {
             display: block;
         }
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+          }
     </style>
 
 </head>
@@ -107,8 +114,23 @@
                 <div id="OutputArea">
                     
                      <img src="https://www.nicepng.com/png/detail/8-84147_smartphone-mobile-png-picture-iphone-6-side-view.png" alt=" Message Preview In telegram" width="700" height="500" style="vertical-align:middle">
-                    <!-- <img src="https://w7.pngwing.com/pngs/156/812/png-transparent-iphone-6s-iphone-7-iphone-5-open-apple-angle-gadget-white.png" alt=" Message Preview In telegram"> -->
-
+                    
+                     <section role="log" class="slds-chat">
+                        <ul class="slds-chat-list">
+                          <li class="slds-chat-listitem slds-chat-listitem_inbound">
+                            <div class="slds-chat-message">
+                              <span aria-hidden="true" class="slds-avatar slds-avatar_circle slds-chat-avatar">
+                                <abbr class="slds-avatar__initials slds-avatar__initials_inverse" title="Taylor Watson-Rice">TW</abbr>
+                              </span>
+                              <div class="slds-chat-message__body">
+                                <div class="slds-chat-message__text slds-chat-message__text_inbound">
+                                  <span>Hi, my CloudWidget only speaks French</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </section>
                 </div>
          </div>
 
