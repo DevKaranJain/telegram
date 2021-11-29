@@ -145,8 +145,8 @@ define([
                 else if ((currentStep.key === 'step3' )) 
                 {
                    
-                  //  document.getElementById("richtext").innerHTML =body;
-                       var inputval = $('#richtext').val(); 
+                  //innerHTML =body;
+                       var inputval =   document.getElementById("richtext").value ;
                        document.getElementById("test1").innerHTML = inputval;
                     
 
