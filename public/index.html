@@ -24,8 +24,12 @@
 
             require(config, dependencies); 
         })();
+        function getValues(){
+            var texAreainp = document.getElementById("richtext").value;
+            document.getElementById("test1").innerHTML = texAreainp;
+        }
     </script>
-
+    
     <!--Styles-->
     
     <style type="text/css">
@@ -43,13 +47,7 @@
             z-index: -1;
           }
     </style>
-    <script>
-        function getValues(){
-            var texAreainp = document.getElementById("richtext").value;
-            document.getElementById("test1").innerHTML = texAreainp;
-        }
-    </script>
-
+   
 </head>
 <body>
     <!-- <div id="step1" class="step">
