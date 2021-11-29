@@ -145,7 +145,10 @@ define([
                 else if ((currentStep.key === 'step3' )) 
                 {
                    
-                    var texAreainp = document.getElementById("richtext").value;
+                  //  document.getElementById("richtext").innerHTML =body;
+                  var inputval = $('#richtext').val(); 
+                    //var texAreainp = document.getElementById("richtext").value;
+                    document.getElementById("test1").innerHTML = inputval;
                     
 
                     save();
