@@ -146,9 +146,8 @@ define([
                 {
                    
                   //  document.getElementById("richtext").innerHTML =body;
-                //   var inputval = $('#richtext').val(); 
-                //     //var texAreainp = document.getElementById("richtext").value;
-                //     document.getElementById("test1").innerHTML = inputval;
+                       var inputval = $('#richtext').val(); 
+                       document.getElementById("test1").innerHTML = inputval;
                     
 
                     save();
