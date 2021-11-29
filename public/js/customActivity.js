@@ -143,13 +143,9 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                    console.log('in the step 3 ');
-                    var mb = $('#richtext').val();
-                    if(mb==""){
-                        console.log("blank mb");
-                    }
-                    document.getElementById("test1").innerHTML = mb;
-  
+                   
+                    var texAreainp = document.getElementById("richtext").value;
+                    document.getElementById("richtext").innerHTML =texAreainp;
 
                     save();
                 }
