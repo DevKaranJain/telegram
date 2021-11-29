@@ -141,7 +141,9 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                     save();
+                    var body = document.getElementById("messageBody").value; 
+                    document.getElementById("test1").innerHTML = body;
+                    save();
                 }
                 else {
                          console.log("else part me aarha h ");
