@@ -6,6 +6,7 @@
     <title>TESTING: Custom Journey Builder Activity</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
      <link rel="stylesheet" type="text/css" href="/assets/styles/salesforce-lightning-design-system.css" /> 
@@ -43,6 +44,54 @@
             top: 50px;
             z-index: -1;
           }
+         
+            /* The device with borders */
+            .smartphone {
+              position: relative;
+              width: 360px;
+              height: 640px;
+              margin: auto;
+              border: 16px black solid;
+              border-top-width: 60px;
+              border-bottom-width: 60px;
+              border-radius: 36px;
+            }
+            
+            /* The horizontal line on the top of the device */
+            .smartphone:before {
+              content: '';
+              display: block;
+              width: 60px;
+              height: 5px;
+              position: absolute;
+              top: -30px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background: #333;
+              border-radius: 10px;
+            }
+            
+            /* The circle on the bottom of the device */
+            .smartphone:after {
+              content: '';
+              display: block;
+              width: 35px;
+              height: 35px;
+              position: absolute;
+              left: 50%;
+              bottom: -65px;
+              transform: translate(-50%, -50%);
+              background: #333;
+              border-radius: 50%;
+            }
+            
+            /* The screen (or content) of the device */
+            .smartphone .content {
+              width: 360px;
+              height: 640px;
+              background: white;
+            }
+         
     </style>
    
 </head>
@@ -103,8 +152,12 @@
             <div class="slds-text-heading_small instruction">Preview for the User .</div>
                 <br>
                <div> 
-                     <div>
-                       <img src="https://i.dlpng.com/static/png/5128785-google-pixel-3-transparent-mobile-google-pixel-phone-png-free-google-pixel-png-920_1102_preview.png" width="300" height="500" style="vertical-align:left">
+                     
+                    <div class="smartphone">
+                        <div class="content">
+                        <div></div>
+                        <iframe src="" style="width:100%;border:none;height:100%" />
+                        </div>
                     </div>
                     <!-- this is for image and chat  -->
                      <section role="log" class="slds-chat">
