@@ -53,7 +53,27 @@
            
            
           } 
-         
+          .slds-chat-message__text_inbound{
+            background-color: skyblue;
+        }
+        span.words{
+            word-break: break-word;
+            width: 200px;
+            word-wrap: break-word;
+        }
+        li.cc{
+            word-break: break-all;
+            width: 200px;
+            word-wrap: break-word;
+            text-align: left;
+        }
+        span.ce{
+            position: absolute;
+            left: -33px;
+            width: auto;
+            top: 8px;
+            padding: 163px;
+        }
     </style>
 
 </head>
@@ -119,9 +139,9 @@
                     </div>
                      <section role="log" class="slds-chat" class="a">
                         <ul class="slds-chat-list">
-                          <li class="slds-chat-listitem slds-chat-listitem_inbound">
-                            <div class="slds-chat-message" >
-                              <span aria-hidden="true" class="slds-avatar slds-avatar_circle slds-chat-avatar">
+                          <li class="slds-chat-listitem slds-chat-listitem_inbound" class="cc">
+                            <div class="slds-chat-message"  class="ce">
+                              <span aria-hidden="true" class="slds-avatar slds-avatar_circle slds-chat-avatar" class="words">
                                 <abbr class="slds-avatar__initials slds-avatar__initials_inverse" title="Salesforce Telegram Bot ">SB</abbr>
                               </span>
                               <div class="slds-chat-message__body" >
