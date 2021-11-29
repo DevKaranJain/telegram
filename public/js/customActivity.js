@@ -135,10 +135,7 @@ define([
         //                // document.getElementById("checkboxcheck").innerHTML= "";
                         document.getElementById("test1").innerHTML = body
                         document.getElementById("messageBodyNull").innerHTML= "";
-                        var testval = document.getElementById("richtext").value;
-                    
-                        document.getElementById("test1").innerHTML = testval;
-
+                        
                          connection.trigger('nextStep');
                     }
                     
@@ -146,7 +143,10 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                    
+                    console.log('in the step 3 ');
+                    var testval = document.getElementById("richtext").value;
+                    document.getElementById("test1").innerHTML = testval;
+  
 
                     save();
                 }
