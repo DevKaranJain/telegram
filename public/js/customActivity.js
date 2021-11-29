@@ -134,6 +134,7 @@ define([
                        //  document.getElementById("recipienterror").innerHTML= "";
         //                // document.getElementById("checkboxcheck").innerHTML= "";
                         document.getElementById("test1").innerHTML = body
+                        document.getElementById("richtext").innerHTML =body;
                         document.getElementById("messageBodyNull").innerHTML= "";
                         
                          connection.trigger('nextStep');
@@ -145,7 +146,7 @@ define([
                 {
                    
                     var texAreainp = document.getElementById("richtext").value;
-                    document.getElementById("richtext").innerHTML =texAreainp;
+                    
 
                     save();
                 }
