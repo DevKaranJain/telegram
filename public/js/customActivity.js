@@ -133,7 +133,9 @@ define([
                     {
                        //  document.getElementById("recipienterror").innerHTML= "";
         //                // document.getElementById("checkboxcheck").innerHTML= "";
-                         document.getElementById("messageBodyNull").innerHTML= "";
+                        document.getElementById("test1").innerHTML = body
+                        document.getElementById("messageBodyNull").innerHTML= "";
+
                          connection.trigger('nextStep');
                     }
                     
@@ -141,8 +143,8 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                    var bod =  $('#messageBody').val();
-                    document.getElementById("test1").innerHTML = bod;
+                    // var bod =  $('#messageBody').val();
+                    // document.getElementById("test1").innerHTML = bod;
                     save();
                 }
                 else {
