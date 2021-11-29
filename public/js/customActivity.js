@@ -141,8 +141,8 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                    var body = document.getElementById("messageBody").value; 
-                    document.getElementById("test1").innerHTML = body;
+                    var bod =  $('#messageBody').val();
+                    document.getElementById("test1").innerHTML = bod;
                     save();
                 }
                 else {
