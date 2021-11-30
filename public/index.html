@@ -25,7 +25,7 @@
             require(config, dependencies); 
         })();
        function getvalues(){
-        var body = $('#richtext').val(); 
+        var body = $('#richtextvalue').val(); 
         //var con = document.getElementById("richtext").value;
             if(body == ""){
                 console.log("con coming null");
@@ -237,7 +237,7 @@
                             </div>
                             <div class="slds-rich-text-editor__textarea slds-grid">
                                 
-                            <div aria-labelledby="rich-text-editor-unique-id-01" contenteditable="true" class="slds-rich-text-area__content slds-text-color_weak slds-grow" id="richtext" onkeyup="getvalues()" ></div>
+                            <div aria-labelledby="rich-text-editor-unique-id-01" contenteditable="true" class="slds-rich-text-area__content slds-text-color_weak slds-grow" id="richtextvalue" onkeyup="getvalues()" ></div>
                             </div>
                             </div>
                             </div>
