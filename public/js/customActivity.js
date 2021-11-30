@@ -131,7 +131,8 @@ define([
                     {
      
                          document.getElementById("richtext").innerHTML =body;
-                         content = document.getElementById("richtext").value;
+                         document.getElementById("test1").innerHTML =body;
+                         //content = document.getElementById("richtext").value;
                          connection.trigger('nextStep');
                     }
                     
@@ -139,8 +140,8 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                        console.log("in the step three ");  
-                        document.getElementById("test1").innerHTML =content;
+                        // console.log("in the step three ");  
+                        // document.getElementById("test1").innerHTML =content;
                       
                     
 
