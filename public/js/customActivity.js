@@ -146,8 +146,8 @@ define([
                 {
                    
                   //innerHTML =body;
-                       var inputval =   document.getElementById("richtext").value ;
-                       document.getElementById("test1").innerHTML = inputval;
+                    //    var inputval =   document.getElementById("richtext").value ;
+                    //    document.getElementById("test1").innerHTML = inputval;
                     
 
                     save();
