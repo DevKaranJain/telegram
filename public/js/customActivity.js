@@ -24,6 +24,7 @@ define([
     connection.on('clickedNext',  onClickedNext);
     connection.on('clickedBack', onClickedBack);
     connection.on('gotoStep', onGotoStep);
+    // connection.on('getvalue', getvalues);
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
@@ -92,6 +93,7 @@ define([
     function onClickedNext (){
                  var errorSlds = '<div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert"><span class="slds-assistive-text">error</span><span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small" title="Description of icon when needed"><svg class="slds-icon slds-icon_x-small" aria-hidden="true"><use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#error"></use></svg></span><h2>Please fill Telegram Bot Token </h2> <div class="slds-notify__close"><button class="slds-button slds-button_icon slds-button_icon-small slds-button_icon-inverse" title="Close"><svg class="slds-button__icon" aria-hidden="true"><use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use></svg><span class="slds-assistive-text">Close</span></button></div></div>';
                  var messageBodyerrorSlds = '<div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert"><span class="slds-assistive-text">error</span><span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small" title="Description of icon when needed"><svg class="slds-icon slds-icon_x-small" aria-hidden="true"><use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#error"></use></svg></span><h2>Message body is empty.</h2></div>';
+                 var content="" ;
     
                    console.log('error slds ------------------ '+errorSlds);
                  if(currentStep.key === 'step1')
@@ -123,20 +125,13 @@ define([
                          console.log('body coming null '+ body);
                          connection.trigger('ready');
                     }
-                   // else if(recipient == "None")
-        //             // {
-        //             //     document.getElementById("recipienterror").innerHTML= "Recipient field is empty";
-        //             //     connection.trigger('ready');
-        //             // }
+                   
         
                      else 
                     {
-                       //  document.getElementById("recipienterror").innerHTML= "";
-        //                // document.getElementById("checkboxcheck").innerHTML= "";
-                     //   document.getElementById("test1").innerHTML = body
+     
                          document.getElementById("richtext").innerHTML =body;
-                        // document.getElementById("messageBodyNull").innerHTML= "";
-                        
+                         content = document.getElementById("richtext").value;
                          connection.trigger('nextStep');
                     }
                     
@@ -144,10 +139,9 @@ define([
                 //&& steps[3].active === false
                 else if ((currentStep.key === 'step3' )) 
                 {
-                   
-                  //innerHTML =body;
-                    //    var inputval =   document.getElementById("richtext").value ;
-                    //    document.getElementById("test1").innerHTML = inputval;
+                        console.log("in the step three ");  
+                        document.getElementById("test1").innerHTML =content;
+
                     
 
                     save();
@@ -157,7 +151,9 @@ define([
                         connection.trigger('nextStep');
                 }
          }
-    
+         function getvalues(){
+                        
+        }
       
         function onClickedBack (){
             connection.trigger('prevStep');
