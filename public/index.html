@@ -25,15 +25,16 @@
             require(config, dependencies); 
         })();
        //function getvalues(){
-        /*var con = document.getElementById("richtext").value;
-            if(con == ""){
+        var body = $('#richtext').val(); 
+        //var con = document.getElementById("richtext").value;
+            if(body == ""){
                 console.log("con coming null");
             }else {
-                console.log("con coming with vlaues "+ con);
-                document.getElementById("test1").innerHTML = con;
+                console.log("con coming with vlaues "+ body);
+                document.getElementById("test1").innerHTML = body;
 
-            }*/
-            $(function() {
+            }
+           /* $(function() {
                 $('#richtext').keyup(function() {
                     $('#test1').val(parseMe($(this).html()));
                   });
@@ -42,7 +43,7 @@
                   function parseMe(value) {
                     return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
                   }
-                });
+                });*/
        //}
     </script>
     
