@@ -141,7 +141,7 @@ define([
                 {
                         console.log("in the step three ");  
                         document.getElementById("test1").innerHTML =content;
-
+                      
                     
 
                     save();
@@ -151,9 +151,7 @@ define([
                         connection.trigger('nextStep');
                 }
          }
-         function getvalues(){
-                        
-        }
+        
       
         function onClickedBack (){
             connection.trigger('prevStep');
