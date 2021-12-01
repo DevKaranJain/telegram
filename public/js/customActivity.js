@@ -130,7 +130,7 @@ define([
                      else 
                     {
      
-                         document.getElementById("richtext").innerHTML =body;
+                         document.getElementById("richtextvalue").innerHTML =body;
                          //document.getElementById("test1").innerHTML =body;
                          //content = document.getElementById("richtext").value;
                          connection.trigger('nextStep');
