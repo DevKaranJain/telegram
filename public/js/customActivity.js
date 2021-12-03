@@ -66,7 +66,8 @@ define([
                 // }
 
                 if (key === 'body') {
-                    $('#messageBody').val(val);
+                    //$('#messageBody').val(val);
+                    $('#richtextvalue').val(val);
                 }                                                               
 
             })
@@ -235,7 +236,7 @@ define([
         var accountSid = $('#accountSid').val();
         var authToken = $('#authToken').val();
         var messagingService = $('#messagingService').val();
-        var body = $('#messageBody').val();
+        var body = $('#richtextvalue').val();
        // console.log("in the save option "+ body);
         
         payload['arguments'].execute.inArguments = [{
