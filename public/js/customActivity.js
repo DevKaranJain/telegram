@@ -244,7 +244,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.telegramActivity.chatid}}" ,//<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute.telegramActivity.subscriberkey}}" ,//<----This should map to your data extension name and phone number column
            
         }];       
         payload['metaData'].isConfigured = true;
