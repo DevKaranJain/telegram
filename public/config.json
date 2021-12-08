@@ -17,7 +17,7 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.telegramActivity.subscriberKeys}}" 
+                  "to": "{{Contact.Attribute.telegramActivity.subscriberKey}}" 
                   
                 }               
             ],
