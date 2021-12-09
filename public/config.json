@@ -8,8 +8,8 @@
     "lang": {
        "en-US": {
            "name": "Telegram SMS ",
-           "description": "Send Twilio SMS with Journey Builder",
-           "TwilioMessage":"test"
+           "description": "Send Telegram SMS with Journey Builder",
+           "TwilioMessage":"send it"
        }
     },
     "arguments": {
