@@ -112,9 +112,10 @@ exports.execute = function (req, res) {
     const to = requestBody.to;
     const from = requestBody.messagingService;
     const body = requestBody.body;
+    console.log('values in to -------------- '+to);
     try{
         const { sendMessageFor } = require('simple-telegram-message')
-    const sendMessage = sendMessageFor('2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0','992164535')
+    const sendMessage = sendMessageFor('2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0',to)
     //sendMessage(`Hi from bot! and i am hit from journey builder `)
     sendMessage(body)
     .then(console.log)
