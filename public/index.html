@@ -63,7 +63,7 @@
    
 </head>
 <body>
-    <!-- <div id="step1" class="step">
+     <div id="step1" class="step">
     <h2>Create a Twilio SMS message:</h2>
     <p>Twilio's Programmable SMS has the features you’ll need to build quickly and scale to production. We’ve solved the hard problems so you don’t have to.  <a href="https://www.twilio.com/sms" target="_blank">Learn more about about Twilio SMS here</a>.</p>
     <hr>
@@ -83,109 +83,9 @@
         <div><label for="accountSID">Account SID:</label></div>
         <input class="form-control" id="accountSid" type="text" name="accountSID" value="AC70b05daaa72f9a7a87d2bc6fc36408a2">
     </div>
- -->
+ 
 
-    <div id="step1" class="step">
-        <div class="slds-text-heading_small instruction">Enter Bot Token </div>
-            <br>
-        <!-- enter twilio authentication details-->
-            <div class="form-group" >  
-                <div id = "error"></div> 
-            </div> 
-            <div class="form-group">
-                <!-- <div><label for="authToken">Auth Token:<span class="required" style = "color: red">*</span></label></div> -->
-                <!-- <input class="form-control" id="authToken" type="text" name="authToken" value="" required="true" aria-describedby="required-description">  -->
-
-                <div class="slds-form-element">
-                    <label class="slds-form-element__label" for="combobox-id-1" id="combobox-label-id-132">Relate To</label>
-                    <div class="slds-form-element__control">
-                    <div class="slds-combobox_container">
-                    <div class="slds-combobox slds-dropdown-trigger slds-is-open">
-                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
-                    <button type="button" class="slds-input_faux slds-combobox__input" aria-labelledby="combobox-label-id-132 combobox-id-1-selected-value" id="combobox-id-1-selected-value" aria-controls="listbox-id-1" aria-expanded="false" aria-haspopup="listbox">
-                    <span class="slds-truncate" id="combobox-value-id-97"></span>
-                    </button>
-                    <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-                    <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
-                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-                    </svg>
-                    </span>
-                    </div>
-                    <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
-                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option1" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body" >
-                    <span class="slds-truncate" title="Accounts" id="acc"  onselect="clickbar()">Accounts</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option2" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Reports">Reports</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option3" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Contacts">Contacts</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option4" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Files">Files</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option5" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Groups">Groups</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option6" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Leads">Leads</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option7" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Notes">Notes</span>
-                    </span>
-                    </div>
-                    </li>
-                    <li role="presentation" class="slds-listbox__item">
-                    <div id="option8" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-                    <span class="slds-media__figure slds-listbox__option-icon"></span>
-                    <span class="slds-media__body">
-                    <span class="slds-truncate" title="Groups">Groups</span>
-                    </span>
-                    </div>
-                    </li>
-                    </ul>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-            </div> 
-         </div>
-
+    
          <!-- step  2  -->
 
          <div id="step2" class="step">
