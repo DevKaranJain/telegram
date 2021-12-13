@@ -72,7 +72,20 @@
             </div> 
             <div class="form-group">
                 <div><label for="authToken">Auth Token:<span class="required" style = "color: red">*</span></label></div>
-                <input class="form-control" id="authToken" type="text" name="authToken" value="" required="true" aria-describedby="required-description"> 
+                <!-- <input class="form-control" id="authToken" type="text" name="authToken" value="" required="true" aria-describedby="required-description">  -->
+                <p>The select element defines a drop-down list:</p>
+
+                    <form action="/action_page.php">
+                    <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <input type="submit">
+                    </form>
+
             </div> 
          </div>
 
