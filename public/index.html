@@ -64,20 +64,18 @@
 </head>
 <body>
     <div id="step1" class="step">
-        <div class="slds-text-heading_small instruction">Enter Bot Token </div>
+        <div class="slds-text-heading_small instruction">Select UserId's from drop down </div>
             <br>
         <!-- enter twilio authentication details-->
             <div class="form-group" >  
                 <div id = "error"></div> 
             </div> 
             <div class="form-group">
-                <div><label for="authToken">Auth Token:<span class="required" style = "color: red">*</span></label></div>
+                <div><label for="authToken">User Id's :<span class="required" style = "color: red">*</span></label></div>
                 <!-- <input class="form-control" id="authToken" type="text" name="authToken" value="" required="true" aria-describedby="required-description">  -->
-                <p>The select element defines a drop-down list:</p>
-
                     <form>
                     <label for="authToken">Choose a userId:</label>
-                        <select id="authToken" name="userId">
+                        <select id="authToken" name="userId" style="width: 100%;">
                             <option value="Name">Name</option>
                             <option value="subskriberKey">subskriberKey</option>
                             <option value="Email">Email</option>
@@ -93,7 +91,7 @@
          <!-- step  2  -->
 
          <div id="step2" class="step">
-            <div class="slds-text-heading_small instruction"> User / group  chat id .</div>
+            <div class="slds-text-heading_small instruction"> Please enter Message .</div>
                 <br>
             <!-- enter twilio authentication details-->
                 <div class="form-group" >  
@@ -102,7 +100,7 @@
              
     
                 <div class="form-group">
-                    <div><label for="messageBody">Enter message :<span class="required" style = "color: red">*</span></label></div>
+                    <div><label for="messageBody"> The Message :<span class="required" style = "color: red">*</span></label></div>
                     <input class="form-control" id="messageBody" type="text" name="messageBody" value="" required="true" aria-describedby="required-description">        
                 </div>  
          </div>
@@ -173,7 +171,7 @@
                       <div>
                         <div class="demo-only" style="min-height:180px;width:335px;">
                             <div class="slds-form-element">
-                            <span id="rich-text-editor-unique-id-01" class="slds-form-element__label">Details and Steps to Reproduce</span>
+                            <span id="rich-text-editor-unique-id-01" class="slds-form-element__label">Edit your message if you want to :</span>
                             <div class="slds-form-element__control">
                             <div class="slds-rich-text-editor slds-grid slds-grid_vertical slds-nowrap">
                             <div role="toolbar" class="slds-rich-text-editor__toolbar slds-shrink-none">
