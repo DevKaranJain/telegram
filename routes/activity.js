@@ -112,6 +112,7 @@ exports.execute = function (req, res) {
     const to = requestBody.to;
     const from = requestBody.messagingService;
     const body = requestBody.body;
+    console.log('values in body '+ body);
     console.log('values in to -------------- '+to);
     try{
         const { sendMessageFor } = require('simple-telegram-message')
