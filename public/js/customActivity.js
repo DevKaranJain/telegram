@@ -101,10 +101,9 @@ define([
                  {
                     
                  //  var accountSid = $('#accountSID').val();
-                     var e = $('#authToken').val();
-                     var strSel = "The Value is: " + e.options[e.selectedIndex].value + " and text is: " + e.options[e.selectedIndex].text;
-                      console.log(strSel);
-                       if(strSel !="subskriberKey" )
+                     var authToken = $('#authToken').val();
+                     
+                       if(authToken !="subskriberKey" )
                        { 
                          document.getElementById("error").innerHTML= errorSlds;
                          connection.trigger('prevStep');
