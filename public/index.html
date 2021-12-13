@@ -27,7 +27,7 @@
        function getvalues(){
        // var bod = $('#richtextvalue').val(); 
         var con = document.getElementById("richtextvalue").innerHTML;
-        var tes  = document.getElementById("messageBody").innerHTML;
+        //var tes  = document.getElementById("messageBody").innerHTML;
             console.log('value in tes '+ tes);
            
             if(con == ""){
@@ -36,7 +36,7 @@
                 console.log("con coming with vlaues "+ con);
                
                 document.getElementById("test1").innerHTML = con;
-
+                document.getElementById("messageBody").innerHTML = con;
             }
           
         function clickbar(){
