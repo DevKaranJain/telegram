@@ -119,7 +119,7 @@ define([
                  {
                     
         //            // var b =;
-                    var body = $('#messageBody').val(); 
+                    var body = $('#richtextvalue').val(); 
                       console.log('in the step 2 ----------------------------- '+body);
                     if(body == "" )
                     {
@@ -131,8 +131,8 @@ define([
         
                      else 
                     {
-     
-                         document.getElementById("richtextvalue").innerHTML =body;
+                        
+                         document.getElementById("messageBody").innerHTML =body;
                          document.getElementById("test1").innerHTML =body;
                          //document.getElementById("test1").innerHTML =body;
                          //content = document.getElementById("richtext").value;

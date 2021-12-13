@@ -74,7 +74,7 @@
                 <div><label for="authToken">User Id's :<span class="required" style = "color: red">*</span></label></div>
                 <!-- <input class="form-control" id="authToken" type="text" name="authToken" value="" required="true" aria-describedby="required-description">  -->
                     <form>
-                    <label for="authToken">Choose a userId:</label>
+                    <!-- <label for="authToken">Choose a userId:</label> -->
                         <select id="authToken" name="userId" style="width: 100%;">
                             <option value="Name">Name</option>
                             <option value="subskriberKey">subskriberKey</option>
@@ -100,8 +100,8 @@
              
     
                 <div class="form-group">
-                    <div><label for="messageBody"> The Message :<span class="required" style = "color: red">*</span></label></div>
-                    <input class="form-control" id="messageBody" type="text" name="messageBody" value="" required="true" aria-describedby="required-description">        
+                    <div><label for="richtextvalue"> The Message :<span class="required" style = "color: red">*</span></label></div>
+                    <input class="form-control" id="richtextvalue" type="text" name="messageBody" value="" required="true" aria-describedby="required-description">        
                 </div>  
          </div>
          <!-- step 3  -->
@@ -256,7 +256,7 @@
                             </div>
                             <div class="slds-rich-text-editor__textarea slds-grid">
                                 
-                            <div aria-labelledby="rich-text-editor-unique-id-01" contenteditable="true" class="slds-rich-text-area__content slds-text-color_weak slds-grow" id="richtextvalue" onkeyup="getvalues()"></div>
+                            <div aria-labelledby="rich-text-editor-unique-id-01" contenteditable="true" class="slds-rich-text-area__content slds-text-color_weak slds-grow" id="messageBody" onkeyup="getvalues()"></div>
                             </div>
                             </div>
                             </div>
