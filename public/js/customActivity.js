@@ -145,7 +145,11 @@ define([
                 {
                         // console.log("in the step three ");  
                         // document.getElementById("test1").innerHTML =content;
-                      
+                        var bod = $('#richtextvalue').val();
+                        if (!bod){
+                            console.log("in the if ");
+                            document.getElementById("messageBody").innerHTML =bod;
+                        }
                     
 
                     save();
