@@ -101,9 +101,10 @@ define([
                  {
                     
                  //  var accountSid = $('#accountSID').val();
-                     var authToken = $('#authToken').val();
-                     
-                       if(authToken !="subskriberKey" )
+                 //    var authToken = $('#authToken').val();
+                    var e = document.getElementById("authToken");
+                    var strSel =  e.options[e.selectedIndex].text;
+                       if(strSel !="subskriberKey" )
                        { 
                          document.getElementById("error").innerHTML= errorSlds;
                          connection.trigger('prevStep');
