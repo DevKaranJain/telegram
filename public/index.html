@@ -41,7 +41,15 @@
           
         function myfun(){
             console.log("in the my fun ");
-
+            var x = document.getElementById("options");
+            var strSel =  x.options[e.selectedIndex].text;
+            if(strSel == "Send Text")
+            {
+                x.style.display = "block";
+            }
+            else if (strSel == "Send Image"){
+                x.style.display = "block"
+            }
         }
        }
     </script>
