@@ -41,7 +41,7 @@
           
         function myfun(){
             console.log("in the my fun ");
-            var x = document.getElementById("options");
+            var x = document.getElementById("op");
             var y = document.getElementById("messageBody");
             var strSel =  x.options[x.selectedIndex].text;
             if(strSel == "Send Text")
@@ -115,7 +115,7 @@
                    
                     <form>
                         <!-- <label for="authToken">Choose a userId:</label> -->
-                            <select id="options" name="options" style="width: 100%; height:30px;" >
+                            <select id="op" name="op" style="width: 100%; height:30px;" >
                                 <option value="Name">Send Text</option>
                                 <option value="sendimage">Send Image</option>
                                 
