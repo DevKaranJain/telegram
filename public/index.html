@@ -39,8 +39,8 @@
                 document.getElementById("test1").innerHTML = con;
                // document.getElementById("messageBody").innerHTML = con;
             }
-          
-        function myfun(){
+       }
+       /* function myfun(){
             console.log("in the my fun ");
             var x = document.getElementById("op");
             var y = document.getElementById("messageBody");
@@ -52,8 +52,8 @@
             else if (strSel == "Send Image"){
                 x.style.display = "block"
             }
-        }
-       }
+        }*/
+       
     </script>
     
     <!--Styles-->
@@ -114,14 +114,14 @@
                 <div class="form-group">
                     <div><label for="messageBody"> Please Select Message Type:<span class="required" style = "color: red">*</span></label></div>
                    
-                    <form>
-                        <!-- <label for="authToken">Choose a userId:</label> -->
+                    <!-- <form>
+                         <label for="authToken">Choose a userId:</label>
                             <select id="op" name="op" style="width: 100%; height:30px;" >
                                 <option value="Name">Send Text</option>
                                 <option value="sendimage">Send Image</option>
                                 
                             </select>
-                        </form>
+                        </form> -->
 
                     <input class="form-control" id="messageBody" type="text" name="messageBody" value="" style="display:none;">        
                 </div>  
