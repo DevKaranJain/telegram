@@ -47,9 +47,8 @@
             if(ddlViewBy.value == "Text"){
                 Msg.style.display = ddlViewBy.value == "Text" ? "block" : "none";
             }
-            else{
+            else
             Ms.style.display = ddlViewBy.value == "Image" ? "block" : "none";
-            }
         }
        
     </script>
@@ -116,8 +115,8 @@
                         <label for="authToken">Choose a userId:</label>
                             <select id="op" name="op" style="width: 100%; height:30px;" onchange="myfun">
                                 <option value="none"> None</option>
-                                <option value="Name">Text</option>
-                                <option value="sendimage">Image</option>
+                                <option value="Text">Text</option>
+                                <option value="Image">Image</option>
                                 
                             </select>
                     </form>
