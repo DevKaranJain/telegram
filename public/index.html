@@ -53,6 +53,9 @@
             }
             else if (strscl == "Send Image"){
                 f.style.display = "block";
+            }else {
+                y.style.display = "none";
+                f.style.display = "none";
             }
         }
        
@@ -119,6 +122,7 @@
                     <form>
                         <label for="authToken">Choose a userId:</label>
                             <select id="op" name="op" style="width: 100%; height:30px;" onchange="myfun">
+                                <option value="none"> None</option>
                                 <option value="Name">Send Text</option>
                                 <option value="sendimage">Send Image</option>
                                 
