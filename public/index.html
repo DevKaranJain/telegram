@@ -40,16 +40,25 @@
                // document.getElementById("messageBody").innerHTML = con;
             }
        }
-        function myfun(){
-            var ddlViewBy = document.getElementById("op");
-            var Msg = document.getElementById("ers");
-            var ms  = document.getElementById("er");
-            if(ddlViewBy.value == "Text"){
-                Msg.style.display = ddlViewBy.value == "Text" ? "block" : "none";
-            }
-            else
-            Ms.style.display = ddlViewBy.value == "Image" ? "block" : "none";
-        }
+       $(document).ready(function(){
+        $('#sele').on('change', function() {
+          if ( this.value == 'text')
+         {
+            $("#one").show();
+            $("#two").hide();
+          }
+          else if ( this.value == 'Image')
+          {
+            $("#two").show();
+            $("#one").hide();
+
+          }
+          else{
+              $("#one").hide();
+               $("#two").hide();
+          }
+        });
+});
        
     </script>
     
@@ -107,11 +116,31 @@
                     <div id = "messageBodyNull"></div> 
                 </div>
              
-    
-                <div class="form-group">
+                <div>
+                    <select id = "sele">
+                        <option value="none">None</option>
+                        <option value="text">Text</option>
+                        <option value="Image">Image</option>
+                    </select>
+                </div>
+                    <br><br>
+                
+                <div id="one" style="display: none;" >
+                    <input type="text" name="Message" />
+                </div>
+                    
+                    <div id="two" style="display: none;">
+                        <label> enter link </label>
+                        <input type="text" name="image"   /><br><br>
+                        <label>or browse form content builder </label>
+                         <input type="file" id="myFile" name="filename">
+                          <input type="submit">
+        
+                    </div>
+                <!-- <div class="form-group">
                     <div><label for="messageBody"> Please Select Message Type:<span class="required" style = "color: red">*</span></label></div>
                    
-                    <div>
+                     <div>
                         <label for="authToken">Choose a userId:</label>
                             <select id="op" name="op" style="width: 100%; height:30px;" onchange="myfun">
                                 <option value="None"> None</option>
@@ -127,7 +156,8 @@
                         <input class="form-control" id="messageBo" type="text" name="messageBo" value="" >        
                     </div>
                     
-                </div>  
+                </div>   
+            </div> -->
          </div>
 </body>
 </html>
