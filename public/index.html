@@ -42,13 +42,14 @@
        }
         function myfun(){
             var ddlViewBy = document.getElementById("op");
-            var Msg = document.getElementById("messageBody");
-            var ms  = document.getElementById("messageBo");
+            var Msg = document.getElementById("ers");
+            var ms  = document.getElementById("er");
             if(ddlViewBy.value == "Text"){
                 Msg.style.display = ddlViewBy.value == "Text" ? "block" : "none";
             }
-            
+            else{
             Ms.style.display = ddlViewBy.value == "Image" ? "block" : "none";
+            }
         }
        
     </script>
@@ -120,11 +121,11 @@
                                 
                             </select>
                     </form>
-                    <div>
-                        <input class="form-control" id="messageBody" type="text" name="messageBody" value="" style="display:none;" >        
+                    <div id = "ers" style="display:none;">
+                        <input class="form-control" id="messageBody" type="text" name="messageBody" value=""  >        
                     </div>
-                    <div>
-                        <input class="form-control" id="messageBo" type="text" name="messageBo" value=""  style="display: none;">        
+                    <div id="er" style="display:none;" >
+                        <input class="form-control" id="messageBo" type="text" name="messageBo" value="" >        
                     </div>
                     
                 </div>  
