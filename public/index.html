@@ -40,19 +40,20 @@
                // document.getElementById("messageBody").innerHTML = con;
             }
        }
-       /* function myfun(){
+        function myfun(){
             console.log("in the my fun ");
             var x = document.getElementById("op");
             var y = document.getElementById("messageBody");
-            var strSel =  x.options[x.selectedIndex].text;
+            var y = document.getElementById("messageBo");
+            var e =  x.options[x.selectedIndex].text;
             if(strSel == "Send Text")
             {
                 y.style.display = "block";
             }
             else if (strSel == "Send Image"){
-                x.style.display = "block"
+                e.style.display = "block";
             }
-        }*/
+        }
        
     </script>
     
@@ -114,16 +115,17 @@
                 <div class="form-group">
                     <div><label for="messageBody"> Please Select Message Type:<span class="required" style = "color: red">*</span></label></div>
                    
-                    <!-- <form>
-                         <label for="authToken">Choose a userId:</label>
-                            <select id="op" name="op" style="width: 100%; height:30px;" >
+                    <form>
+                        <label for="authToken">Choose a userId:</label>
+                            <select id="op" name="op" style="width: 100%; height:30px;" onchange="myfun">
                                 <option value="Name">Send Text</option>
                                 <option value="sendimage">Send Image</option>
                                 
                             </select>
-                        </form> -->
+                    </form>
 
-                    <input class="form-control" id="messageBody" type="text" name="messageBody" value="" >        
+                    <input class="form-control" id="messageBody" type="text" name="messageBody" value="" style="display: none;" >        
+                    <input class="form-control" id="messageBo" type="text" name="messageBo" value="" style="display: none;" >        
                 </div>  
          </div>
 </body>
