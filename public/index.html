@@ -43,15 +43,16 @@
         function myfun(){
             console.log("in the my fun ");
             var x = document.getElementById("op");
+            var strscl =  x.options[x.selectedIndex].text;
             var y = document.getElementById("messageBody");
-            var y = document.getElementById("messageBo");
-            var e =  x.options[x.selectedIndex].text;
-            if(strSel == "Send Text")
+            var f = document.getElementById("messageBo");
+            
+            if(strscl == "Send Text")
             {
                 y.style.display = "block";
             }
-            else if (strSel == "Send Image"){
-                e.style.display = "block";
+            else if (strscl == "Send Image"){
+                f.style.display = "block";
             }
         }
        
