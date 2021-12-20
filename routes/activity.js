@@ -112,6 +112,9 @@ exports.execute = function (req, res) {
     const to = requestBody.to;
     const from = requestBody.messagingService;
     const body = requestBody.body;
+    const txt = requestBody.sele;
+        console.log('select option is +===='+ txt);
+    
     console.log('values in body '+ body);
     console.log('values in to -------------- '+to);
     try{
