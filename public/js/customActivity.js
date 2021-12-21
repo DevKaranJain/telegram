@@ -242,7 +242,9 @@ define([
         var authToken = $('#authToken').val();
         var messagingService = $('#messagingService').val();
         var body = $('#messageBody').val();
-        var txt = $('#sele').val();
+        var sele = $('#sele').val();
+
+        console.log("vlaue in sele"+ sele);
        // console.log("in the save option "+ body);
         
         payload['arguments'].execute.inArguments = [{
@@ -250,7 +252,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "txt" : txt,
+            "sele" : sele,
             "to": "{{Contact.Attribute.telegramActivity.subscriberKey}}" ,//<----This should map to your data extension name and phone number column
            
         }];       
