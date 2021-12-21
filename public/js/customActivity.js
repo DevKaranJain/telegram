@@ -61,9 +61,9 @@ define([
                     $('#authToken').val(val);
                 }
 
-                // if (key === 'messagingService') {
-                //     $('#messagingService').val(val);
-                // }
+                 if (key === 'messagingService') {
+                     $('#messagingService').val(val);
+                 }
 
                 if (key === 'body') {
                     //$('#messageBody').val(val);
@@ -240,9 +240,9 @@ define([
 
         var accountSid = $('#accountSid').val();
         var authToken = $('#authToken').val();
-        var messagingService = $('#messagingService').val();
+        var messagingService = $('#sele').val();
         var body = $('#messageBody').val();
-        var sele = $('#sele').val();
+        //var sele = $('#sele').val();
 
         console.log("vlaue in sele"+ sele);
        // console.log("in the save option "+ body);
@@ -252,7 +252,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "sele" : sele,
+          
             "to": "{{Contact.Attribute.telegramActivity.subscriberKey}}" ,//<----This should map to your data extension name and phone number column
            
         }];       

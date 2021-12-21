@@ -28,16 +28,12 @@
        function getvalues(){
        // var bod = $('#richtextvalue').val(); 
         var con = document.getElementById("richtextvalue").innerHTML;
-        //var tes  = document.getElementById("messageBody").innerHTML;
-          //  console.log('value in tes '+ tes);
-           
             if(con == ""){
                 console.log("con coming null");
             }else {
                 console.log("con coming with vlaues "+ con);
                
                 document.getElementById("test1").innerHTML = con;
-               // document.getElementById("messageBody").innerHTML = con;
             }
        }
        $(document).ready(function(){
@@ -137,27 +133,7 @@
                           
         
                     </div>
-                <!-- <div class="form-group">
-                    <div><label for="messageBody"> Please Select Message Type:<span class="required" style = "color: red">*</span></label></div>
-                   
-                     <div>
-                        <label for="authToken">Choose a userId:</label>
-                            <select id="op" name="op" style="width: 100%; height:30px;" onchange="myfun">
-                                <option value="None"> None</option>
-                                <option value="Text">Text</option>
-                                <option value="Image">Image</option>
-                                
-                            </select>
-                        </div>
-                    <div id = "ers" style="display:none;">
-                        <input class="form-control" id="messageBody" type="text" name="messageBody" value=""  >        
-                    </div>
-                    <div id="er" style="display:none;" >
-                        <input class="form-control" id="messageBo" type="text" name="messageBo" value="" >        
-                    </div>
-                    
-                </div>   
-            </div> -->
+             
          </div>
 </body>
 </html>
