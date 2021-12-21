@@ -113,7 +113,7 @@ exports.execute = function (req, res) {
     const from = requestBody.messagingService;
     const body = requestBody.body;
     const txt = requestBody.sele;
-        console.log("select option is ---------------------"+txt.options[e.selectedIndex].text);
+        console.log("select option is ---------------------"+txt);
         console.log('select option is +===='+ requestBody);
     
     console.log('values in body '+ body);
