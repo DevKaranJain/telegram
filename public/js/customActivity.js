@@ -121,23 +121,23 @@ define([
         //            // var b =;
                     var body = $('#messageBody').val(); 
                       console.log('in the step 2 ----------------------------- '+body);
-                    if(body == "" )
-                    {
-                         document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
-                         console.log('body coming null '+ body);
-                         connection.trigger('ready');
-                    }
+                    // if(body == "" )
+                    // {
+                    //     // document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
+                    //     // console.log('body coming null '+ body);
+                    //      connection.trigger('ready');
+                    // }
                    
         
-                     else 
-                    {
+                    //  else 
+                    // {
                         
                        //  document.getElementById("richtextvalue").innerHTML =body;
                        //  document.getElementById("test1").innerHTML =body;
                          //document.getElementById("test1").innerHTML =body;
                          //content = document.getElementById("richtext").value;
                          connection.trigger('nextStep');
-                    }
+                  //  }
                     
                 }
                 //&& steps[3].active === false
