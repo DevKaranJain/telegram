@@ -128,13 +128,23 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            console.log("in the image ");
-            const { sendMessageFor } = require('simple-telegram-message')
-            const sendMessage = sendMessageFor('2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0',to)
-            //sendMessage(`Hi from bot! and i am hit from journey builder `)
-            sendMessage(body)
-            .then(console.log)
-            .catch(console.err)
+            var url = 'https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?	'
+				       fetch(url, {
+					  method: 'POST',
+					  headers: { 'Content-Type': 'application/json' },
+					  body: JSON.stringify({
+					  	'chat_id':'992164535',
+					  	'photo':'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+					  	,
+					  	'caption':"uff teri adda uff teri hassi "
+					  }),
+					})
+					  .then((res) => res.json())
+					  .then((data) => {
+					    // Do some stuff ...
+					    console.log("data"+data);
+					  })
+					  .catch((err) => console.log(err));
 
         }
 
