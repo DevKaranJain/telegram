@@ -1,6 +1,6 @@
 'use strict';
 var util = require('util');
-import fetch from 'cross-fetch';
+//import fetch from 'cross-fetch';
 
 // Deps
 const Path = require('path');
