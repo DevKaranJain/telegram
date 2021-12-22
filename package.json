@@ -33,6 +33,7 @@
     "errorhandler": "^1.5.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.0.1",
+    "node-fetch": "^3.1.0",
     "request": "^2.81.0",
     "require": "^2.4.20",
     "simple-telegram-message": "^1.4.1",
