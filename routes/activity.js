@@ -9,7 +9,7 @@ var http = require('https');
 var request = require('request');
 var express     = require('express');
 var bodyParser  = require('body-parser');
-const fetch = require("node-fetch");
+//const fetch = require("node-fetch");
 
 const { JsonWebTokenError } = require('jsonwebtoken');
 
