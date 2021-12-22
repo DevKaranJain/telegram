@@ -10,6 +10,7 @@ var request = require('request');
 var express     = require('express');
 var bodyParser  = require('body-parser');
 //const fetch = require("node-fetch");
+global.fetch = require("node-fetch");
 
 const { JsonWebTokenError } = require('jsonwebtoken');
 
@@ -117,7 +118,7 @@ exports.execute = function (req, res) {
     //const txt = requestBody.sele;
         console.log("select option is ---------------------"+type);
       //  console.log('select option is +===='+ requestBody);
-      const fetch = require("node-fetch");
+    
     console.log('values in body '+ body);
     console.log('values in to -------------- '+to);
     try{
