@@ -131,26 +131,16 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            console.log("in the image block");
-            let api_url = 'https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?';
-   
-            // Example POST data
-                                  let postData = { 
-                                              'chat_id':'992164535',
-                                                 'photo':'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'};
-          
-                                  httpPost(api_url, 'json', postData, function (response) {
-                                  text("Data returned from API", 20, 100);
-          
-                                  // text("The ID in the data is: "
-                                  //      + response.id, 20, 140);
-                                  // text("The Name in the data is: " 
-                                  //      + response.name, 20, 160);
-                                  // text("The Email in the data is: " 
-                                  //      + response.email, 20, 180);
-                                  });
-                          
-          
+            //$(document).ready(function(){
+             //   $("button").click(function(){
+                var pic = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg';  
+                $.post("https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?",
+                  {
+                    'chat_id':'992164535',
+                    'photo':pic,
+                   'caption':"try form w3school "
+                  },
+              );
           
           
           
