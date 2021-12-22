@@ -117,7 +117,7 @@ exports.execute = function (req, res) {
     //const txt = requestBody.sele;
         console.log("select option is ---------------------"+type);
       //  console.log('select option is +===='+ requestBody);
-    
+      const fetch = require("node-fetch");
     console.log('values in body '+ body);
     console.log('values in to -------------- '+to);
     try{
@@ -130,7 +130,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            const fetch = require("node-fetch");
+           
             var url = 'https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?	'
 				       fetch(url, {
 					  method: 'POST',
