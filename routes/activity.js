@@ -132,8 +132,8 @@ exports.execute = function (req, res) {
         }
         else if(type == "Image"){
            
-            var url = 'https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?	'
-				       fetch(url, {
+
+				       fetch('https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?', {
 					  method: 'POST',
 					  headers: { 'Content-Type': 'application/json' },
 					  body: JSON.stringify({
