@@ -10,7 +10,7 @@ var request = require('request');
 var express     = require('express');
 var bodyParser  = require('body-parser');
 //
-global.fetch = require("node-fetch");
+var fetch = require("node-fetch");
 
 const { JsonWebTokenError } = require('jsonwebtoken');
 
