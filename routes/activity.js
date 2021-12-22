@@ -1,6 +1,7 @@
 'use strict';
 var util = require('util');
 
+
 // Deps
 const Path = require('path');
 const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
@@ -8,6 +9,7 @@ var http = require('https');
 var request = require('request');
 var express     = require('express');
 var bodyParser  = require('body-parser');
+const fetch = require("node-fetch");
 
 const { JsonWebTokenError } = require('jsonwebtoken');
 
