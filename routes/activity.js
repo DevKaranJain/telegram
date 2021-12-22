@@ -131,24 +131,29 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-           
-
-				       fetch('https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?', {
-					  method: 'POST',
-					  headers: { 'Content-Type': 'application/json' },
-					  body: JSON.stringify({
-					  	'chat_id':'992164535',
-					  	'photo':'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
-					  	,
-					  	'caption':"hello "
-					  }),
-					})
-					  .then((res) => res.json())
-					  .then((data) => {
-					    // Do some stuff ...
-					    console.log("data"+data);
-					  })
-					  .catch((err) => console.log(err));
+            console.log("in the image block");
+            let api_url = 'https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?';
+   
+            // Example POST data
+                                  let postData = { 
+                                              'chat_id':'992164535',
+                                                 'photo':'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'};
+          
+                                  httpPost(api_url, 'json', postData, function (response) {
+                                  text("Data returned from API", 20, 100);
+          
+                                  // text("The ID in the data is: "
+                                  //      + response.id, 20, 140);
+                                  // text("The Name in the data is: " 
+                                  //      + response.name, 20, 160);
+                                  // text("The Email in the data is: " 
+                                  //      + response.email, 20, 180);
+                                  });
+                          
+          
+          
+          
+          
 
         }
 
