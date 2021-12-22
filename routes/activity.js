@@ -130,6 +130,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
+            const fetch = require("node-fetch");
             var url = 'https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?	'
 				       fetch(url, {
 					  method: 'POST',
