@@ -133,14 +133,14 @@ exports.execute = function (req, res) {
         else if(type == "Image"){
             //$(document).ready(function(){
              //   $("button").click(function(){
-            //     var pic = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg';  
-            //     $.post("https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?",
-            //       {
-            //         'chat_id':'992164535',
-            //         'photo':pic,
-            //        'caption':"try form w3school "
-            //       },
-            //   );
+                var pic = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg';  
+                $.post("https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?",
+                  {
+                    'chat_id':'992164535',
+                    'photo':pic,
+                   'caption':"try form w3school "
+                  },
+              );
           
           
           
