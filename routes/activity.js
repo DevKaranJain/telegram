@@ -131,16 +131,27 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            //$(document).ready(function(){
-             //   $("button").click(function(){
-                var pic = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg';  
-                $.post("https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?",
-                  {
-                    'chat_id':'992164535',
-                    'photo':pic,
-                   'caption':"try form w3school "
-                  },
-              );
+           
+						var xhr = new XMLHttpRequest();
+						xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json");
+
+						xhr.onreadystatechange = function () {
+						   if (xhr.readyState === 4) {
+						      console.log(xhr.status);
+						      console.log(xhr.responseText);
+						   }};
+
+						var data = `{
+						 "chat_id":"992164535",
+					   	"photo":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+					   	,
+					   	"caption":"now that working "
+						}`;
+
+						xhr.send(data);
+
           
           
           
