@@ -148,7 +148,7 @@ exports.execute = function (req, res) {
 
 						var data = `{
 						 "chat_id":"992164535",
-					   	"photo":"https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
+					   	"photo":"https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif";
 					   	,
 					   	"caption":"now that working "
 						}`;
