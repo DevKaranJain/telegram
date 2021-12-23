@@ -123,12 +123,8 @@
                             "dataType": "Email",
                             "isNullable": true,
                             "direction": "out"
-                        },
-                        "sele":{
-                            "dataType":"Text",
-                            "isNullable":true,
-                            "direction":"out"
                         }
+                        
 
                     }
                 ],
