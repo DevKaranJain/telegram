@@ -137,7 +137,7 @@ exports.execute = function (req, res) {
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var http = new XMLHttpRequest();
             var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
-            var params = JSON.stringify({ photo: pic , chat_id:to});
+            var params = JSON.stringify({ photo: pic , chat_id:id});
             http.open("POST", url, true);
 
             http.setRequestHeader("Content-type", "application/json; charset=utf-8");
