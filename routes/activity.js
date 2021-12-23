@@ -131,14 +131,14 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
-            var idss = "992164535";
+          //  var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
+          //  var idss = "992164535";
          //   console.log('values in body '+ body);
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
           var xhr = new XMLHttpRequest();
           var http = new XMLHttpRequest();
           var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
-          var params = JSON.stringify({ photo: pic , chat_id:idss});
+          var params = JSON.stringify({ photo:"https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg",chat_id:"992164535"});
           http.open("POST", url, true);
 
           http.setRequestHeader("Content-type", "application/json; charset=utf-8");
