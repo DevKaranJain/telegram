@@ -131,6 +131,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
+            var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
             console.log('values in body '+ body);
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var http = new XMLHttpRequest();
