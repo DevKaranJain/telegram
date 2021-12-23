@@ -135,21 +135,25 @@ exports.execute = function (req, res) {
             var id = "992164535";
          //   console.log('values in body '+ body);
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-            var http = new XMLHttpRequest();
-            var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
-            var params = JSON.stringify({ photo: pic , chat_id:id});
-            http.open("POST", url, true);
+          var xhr = new XMLHttpRequest();
+						xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
+						xhr.setRequestHeader("Accept", "application/json");
+						xhr.setRequestHeader("Content-Type", "application/json");
 
-            http.setRequestHeader("Content-type", "application/json; charset=utf-8");
-            //http.setRequestHeader("Content-length", params.length);
-            //http.setRequestHeader("Connection", "close");
+						xhr.onreadystatechange = function () {
+						   if (xhr.readyState === 4) {
+						      console.log(xhr.status);
+						      console.log(xhr.responseText);
+						   }};
 
-            http.onreadystatechange = function() {
-                if(http.readyState == 4 && http.status == 200) {
-                    alert(http.responseText);
-                }
-            }
-            http.send(params);
+						var data = `{
+						 "chat_id":"992164535",
+					   	"photo":"https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
+					   	,
+					   	"caption":"now that working "
+						}`;
+
+						xhr.send(data);
 
 
 
