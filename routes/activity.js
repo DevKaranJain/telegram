@@ -132,28 +132,26 @@ exports.execute = function (req, res) {
         }
         else if(type == "Image"){
             var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
-            var id = "992164535";
+            var idss = "992164535";
          //   console.log('values in body '+ body);
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
           var xhr = new XMLHttpRequest();
-						xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
-						xhr.setRequestHeader("Accept", "application/json");
-						xhr.setRequestHeader("Content-Type", "application/json");
+          var http = new XMLHttpRequest();
+          var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
+          var params = JSON.stringify({ photo: pic , chat_id:idss});
+          http.open("POST", url, true);
 
-						xhr.onreadystatechange = function () {
-						   if (xhr.readyState === 4) {
-						      console.log(xhr.status);
-						      console.log(xhr.responseText);
-						   }};
+          http.setRequestHeader("Content-type", "application/json; charset=utf-8");
+          //http.setRequestHeader("Content-length", params.length);
+          //http.setRequestHeader("Connection", "close");
 
-						var data = `{
-						 "chat_id":"992164535",
-					   	"photo":"https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif";
-					   	,
-					   	"caption":"now that working "
-						}`;
+          http.onreadystatechange = function() {
+              if(http.readyState == 4 && http.status == 200) {
+                  alert(http.responseText);
+              }
+          }
+          http.send(params);
 
-						xhr.send(data);
 
 
 
