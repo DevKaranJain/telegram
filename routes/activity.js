@@ -114,7 +114,7 @@ exports.execute = function (req, res) {
     const authToken = requestBody.authToken;
     const to = requestBody.to;
     const type = requestBody.messagingService;
-    const body = requestBody.body;
+    const body = "hello i try"; //requestBody.body;
     //const txt = requestBody.sele;
         console.log("select option is ---------------------"+type);
       //  console.log('select option is +===='+ requestBody);
