@@ -119,7 +119,7 @@ exports.execute = function (req, res) {
         console.log("select option is ---------------------"+type);
       //  console.log('select option is +===='+ requestBody);
     
-    console.log('values in body '+ body);
+   
     console.log('values in to -------------- '+to);
     try{
         if(type=="text"){
@@ -131,6 +131,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
+            console.log('values in body '+ body);
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 						var xhr = new XMLHttpRequest();
 						xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
