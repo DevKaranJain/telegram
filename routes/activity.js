@@ -144,8 +144,8 @@ exports.execute = function (req, res) {
 						   }};
 
 						var data = `{
-						 "chat_id":"992164535",
-					   	"photo":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+						 "chat_id":to,
+					   	"photo":body
 					   	,
 					   	"caption":"now that working "
 						}`;
