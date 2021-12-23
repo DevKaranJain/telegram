@@ -131,7 +131,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-           
+            var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 						var xhr = new XMLHttpRequest();
 						xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
 						xhr.setRequestHeader("Accept", "application/json");
