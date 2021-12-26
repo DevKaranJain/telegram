@@ -131,17 +131,17 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
+            
             var pic= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
-              var to ="992164535";
+            var to ="992164535";
             var http = new XMLHttpRequest();
+            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
             var params = JSON.stringify({ photo:pic, chat_id:to});
             http.open("POST", url, true);
-
-            http.setRequestHeader("Content-type", "application/json; charset=utf-8");
             http.onreadystatechange = function() {
                 if(http.readyState == 4 && http.status == 200) {
-                    console.log(http.responseText);
+                    console.log("http ------ "+http.responseText);
                 }
             }
             http.send(params);
