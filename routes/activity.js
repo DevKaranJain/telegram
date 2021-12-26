@@ -135,7 +135,7 @@ exports.execute = function (req, res) {
           //  var idss = "992164535";
             console.log('just before the xml httprequest ');
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-          var xhr = new XMLHttpRequest();
+        //  var xhr = new XMLHttpRequest();
           var http = new XMLHttpRequest();
           console.log('just before the url ');
           var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
