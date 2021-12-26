@@ -131,7 +131,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
+            var pic = "https://thumbs.dreamstime.com/b/imagination-girl-kiss-lion-love-nature-abstract-concept-young-steals-male-wildlife-children-like-to-imagine-play-129595579.jpg";
             var idss = "992164535";
             console.log('just before the xml httprequest ');
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
