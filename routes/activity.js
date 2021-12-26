@@ -131,15 +131,15 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-          //  var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
-          //  var idss = "992164535";
+            var pic = "https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg";
+            var idss = "992164535";
             console.log('just before the xml httprequest ');
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
         //  var xhr = new XMLHttpRequest();
           var http = new XMLHttpRequest();
           console.log('just before the url ');
           var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
-          var params = JSON.stringify({ photo:"https://image.shutterstock.com/image-photo/picture-beautiful-view-birds-260nw-1836263689.jpg",chat_id:"992164535"});
+          var params = JSON.stringify({ photo:pic,chat_id:idss});
           http.open("POST", url, true);
           console.log('just before the xml httprequest header ');
           http.setRequestHeader("Content-type", "application/json; charset=utf-8");
@@ -149,9 +149,9 @@ exports.execute = function (req, res) {
           http.onreadystatechange = function() {
               if(http.readyState == 4 && http.status == 200) {
                  // alert();
-                 console.log(http.responseText);
+                 console.log("response text ------- "+http.responseText);
                  console.log('in the onready statechange function ');
-                 console.log(xhr.status);
+                 console.log("status is the ----------- "+xhr.status);
               }
           }
           http.send(params);
