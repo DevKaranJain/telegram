@@ -131,6 +131,8 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
+            var pic= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
+		    var to ="992164535";
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var http = new XMLHttpRequest();
                 var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
