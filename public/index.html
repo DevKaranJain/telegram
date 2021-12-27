@@ -113,17 +113,17 @@
                 </div>
              
                 <div>
-                    <select id = "sele">
+                    <select id = "sele" style="width: 20%; height:15%">
                         <option value="none">None</option>
                         <option value="text">Text</option>
                         <option value="Image">Image</option>
                     </select>
                 </div>
-                    <br><br>
+                    <br>
                 
                 <div id="one" style="display: none;" >
                     <!-- <input  id="messageBody" type="text" name="Message" /> -->
-                    <div class="slds-form-element">
+                    <div class="slds-form-element" style="width: 50%;"> 
                         <label class="slds-form-element__label" for="textarea-id-01">Enter Text Message :) </label>
                         <div class="slds-form-element__control">
                         <textarea id="messageBody" placeholder="Enter your text…" class="slds-textarea"></textarea>
@@ -135,10 +135,23 @@
                 </div>
                     
                     <div id="two" style="display: none;">
-                        <label> Enter image link </label>
-                        <input id= "img" type="text" name="image"   /><br><br>
-                        <label> Enter some caption </label>
-                        <input id="captions" type="text" name="Caption"/>  
+                        <!-- <label> Enter image link </label> -->
+                        <div class="slds-form-element" style="width: 50%;"> 
+                            <label class="slds-form-element__label" for="textarea-id-01">Paste your link here :) </label>
+                            <div class="slds-form-element__control">
+                            <textarea id="img" placeholder="Image Link..." class="slds-textarea"></textarea>
+                            </div>
+                            </div>
+                        <!-- <input id= "img" type="text" name="image"   /><br><br> -->
+                        <!-- <label> Enter some caption </label> -->
+                        <!-- <input id="captions" type="text" name="Caption"/>   -->
+                            <br><span>Send Photo with caption </span>><br> 
+                        <div class="slds-form-element" style="width: 50%;"> 
+                            <label class="slds-form-element__label" for="textarea-id-01">Enter your Captions for Image:) </label>
+                            <div class="slds-form-element__control">
+                            <textarea id="captions" placeholder="Caption …" class="slds-textarea"></textarea>
+                            </div>
+                            </div>
                           
         
                     </div>
