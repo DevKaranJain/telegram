@@ -122,7 +122,7 @@ define([
                     var asid = $('#accountSid').val(); 
                     console.log("body--------"+body);
                     console.log("image link----"+ asid);
-                        if(body == "" && asid == ""){
+                        if(body==='' && asid === undefined){
                              document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
                                  console.log('body coming null '+ body);
                                  console.log('image linkk'+ asid);
