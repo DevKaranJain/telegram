@@ -134,7 +134,7 @@ exports.execute = function (req, res) {
             var pic= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
 		    var numbers ="992164535";
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
+            xhr.open("POST", "https://api.telegram.org/bot2026995123:AAGyuZHQ5nwaD2zzML0K3bzsRmngMBXBEj4/sendPhoto?");
             //xhr.setRequestHeader("Accept", "application/json");
             xhr.setRequestHeader("Content-Type", "application/json");
 
