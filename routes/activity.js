@@ -133,6 +133,7 @@ exports.execute = function (req, res) {
         else if(type == "Image"){
             var pic= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
 		    var numbers ="992164535";
+            var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "https://api.telegram.org/bot2026995123:AAGyuZHQ5nwaD2zzML0K3bzsRmngMBXBEj4/sendPhoto?");
             //xhr.setRequestHeader("Accept", "application/json");
