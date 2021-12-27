@@ -114,7 +114,7 @@ exports.execute = function (req, res) {
     const authToken = requestBody.authToken;
     const to = requestBody.to;
     const type = requestBody.messagingService;
-    const body = "hello i try"; //requestBody.body;
+    const body = requestBody.body;
     //const txt = requestBody.sele;
         console.log("select option is ---------------------"+type);
       //  console.log('select option is +===='+ requestBody);
@@ -151,8 +151,8 @@ exports.execute = function (req, res) {
             //    ,
             //    "caption":"now that working "
             // }`;
-
-            var data = JSON.stringify({ photo:pic, chat_id:to , caption:"hello"});
+             console.log("accountSid --------"+ accountSid);  
+            var data = JSON.stringify({ photo:accountSid, chat_id:to , caption:"hello"});
 
             xhr.send(data);
             

@@ -53,9 +53,9 @@ define([
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
 
-                // if (key === 'accountSid') {
-                //     $('#accountSID').val(val);
-                // }
+                if (key === 'accountSid') {
+                    $('#accountSID').val(val);
+                }
 
                 if (key === 'authToken') {
                     $('#authToken').val(val);
@@ -238,7 +238,7 @@ define([
 
     function save() {
 
-        var accountSid = $('#accountSid').val();
+        var accountSid = $('#img').val();
         var authToken = $('#authToken').val();
         var messagingService = $('#sele').val();
         var body = $('#messageBody').val();
