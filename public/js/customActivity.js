@@ -120,6 +120,8 @@ define([
                     console.log('in the step 2 ----------------------------- ');
                     var body = $('#messageBody').val();
                     var asid = $('#accountSid').val(); 
+                    console.log("body--------"+body);
+                    console.log("image link----"+ asid);
                         if(body == "" && asid == ""){
                              document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
                                  console.log('body coming null '+ body);
