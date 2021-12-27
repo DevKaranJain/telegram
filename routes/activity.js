@@ -124,19 +124,15 @@ exports.execute = function (req, res) {
     try{
         if(type=="text"){
             const { sendMessageFor } = require('simple-telegram-message')
-            const sendMessage = sendMessageFor('2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0',to)
-                    //sendMessage(`Hi from bot! and i am hit from journey builder `)
+            const sendMessage = sendMessageFor('2026995123:AAGyuZHQ5nwaD2zzML0K3bzsRmngMBXBEj4',to)
             sendMessage(body)
             .then(console.log)
             .catch(console.err)
         }
         else if(type == "Image"){
-            var pic= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
-		    var numbers ="992164535";
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "https://api.telegram.org/bot2026995123:AAGyuZHQ5nwaD2zzML0K3bzsRmngMBXBEj4/sendPhoto?");
-            //xhr.setRequestHeader("Accept", "application/json");
             xhr.setRequestHeader("Content-Type", "application/json");
 
             xhr.onreadystatechange = function () {
@@ -147,13 +143,6 @@ exports.execute = function (req, res) {
              console.log("accountSid --------"+ accountSid);  
             var data = JSON.stringify({ photo:accountSid, chat_id:to , caption:authToken});   
             xhr.send(data);
-            
-
-
-          
-          
-          
-
         }
 
 
