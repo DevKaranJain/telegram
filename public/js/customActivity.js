@@ -10,8 +10,8 @@ define([
     var lastStepEnabled = false;
     var steps = [ // initialize to the same value as what's set in config.json for consistency
         { "label": "Enter Auth Token", "key": "step1" },
-        { "label": "Create SMS Message", "key": "step2" },
-        { "label": "Preview", "key": "step3" }
+        { "label": "Create SMS Message", "key": "step2" }
+        
     ];
     var currentStep = steps[0].key;
 
@@ -137,23 +137,24 @@ define([
                          //document.getElementById("test1").innerHTML =body;
                          //content = document.getElementById("richtext").value;
                          connection.trigger('nextStep');
+                         save();
                   //  }
                     
                 }
                 //&& steps[3].active === false
-                else if ((currentStep.key === 'step3' )) 
-                {
-                        // console.log("in the step three ");  
-                        // document.getElementById("test1").innerHTML =content;
-                       // var bod = $('#richtextvalue').val();
-                        // if (!bod){
-                        //     console.log("in the if ");
-                        //     document.getElementById("messageBody").innerHTML =bod;
-                        // }
+                // else if ((currentStep.key === 'step3' )) 
+                // {
+                //         // console.log("in the step three ");  
+                //         // document.getElementById("test1").innerHTML =content;
+                //        // var bod = $('#richtextvalue').val();
+                //         // if (!bod){
+                //         //     console.log("in the if ");
+                //         //     document.getElementById("messageBody").innerHTML =bod;
+                //         // }
                     
 
-                    save();
-                }
+                //     save();
+                // }
                 else {
                          console.log("else part me aarha h ");
                         connection.trigger('nextStep');
@@ -198,13 +199,13 @@ define([
                     case 'step2':
                         $('#step2').show();
                         console.log("---------------------------------------------------------------------------------------------------------------->This is step 2");
-                        //  connection.trigger('updateButton', {
-                        //      button: 'back',
-                        //      visible: true
-                        //  });
+                         connection.trigger('updateButton', {
+                             button: 'back',
+                             visible: true
+                         });
                              connection.trigger('updateButton', {
                             button: 'next',
-                            text: 'next',
+                            text: 'Done',
                             visible: true
                         });
     
@@ -215,18 +216,18 @@ define([
                         // });
                         break;
                         case 'step3':
-                    $('#step3').show();
-                        console.log("---------------------------------------------------------------------------------------------------------------->This is step 3");
-                                connection.trigger('updateButton', {
-                                button: 'back',
-                                visible: true
-                        });
-                        connection.trigger('updateButton', {
-                            button: 'next',
-                            text: 'Done',
-                            visible: true
-                            });
-                        break;
+                    // $('#step3').show();
+                    //     console.log("---------------------------------------------------------------------------------------------------------------->This is step 3");
+                    //             connection.trigger('updateButton', {
+                    //             button: 'back',
+                    //             visible: true
+                    //     });
+                    //     connection.trigger('updateButton', {
+                    //         button: 'next',
+                    //         text: 'Done',
+                    //         visible: true
+                    //         });
+                    //     break;
                         // case 'step4':
                         //     $('#step4').show();
                         //     console.log("---------------------------------------------------------------------------------------------------------------->This is step 4");

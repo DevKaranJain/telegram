@@ -70,8 +70,8 @@
     },
     "wizardSteps": [
        { "label": "Create SMS Message", "key": "step1" },
-       { "label": "Create SMS Message", "key": "step2" },
-       { "label": "Preview", "key": "step3" }
+       { "label": "Create SMS Message", "key": "step2" }
+     
     ],
     "userInterfaces": {
        "configModal": {
