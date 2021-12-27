@@ -133,20 +133,25 @@ exports.execute = function (req, res) {
         else if(type == "Image"){
             var pic= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
 		    var numbers ="992164535";
-            var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-            var http = new XMLHttpRequest();
-                var url = "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?";
-                var params = JSON.stringify({ photo:pic, chat_id:numbers});
-                http.open("POST", url, true);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "https://api.telegram.org/bot2026995123:AAFdSGvRF9wOiQEpZQLqX7QFnG99sIJk8g0/sendPhoto?");
+            //xhr.setRequestHeader("Accept", "application/json");
+            xhr.setRequestHeader("Content-Type", "application/json");
 
-                http.setRequestHeader("Content-type", "application/json; charset=utf-8");
-                http.onreadystatechange = function() {
-                    if(http.readyState == 4 && http.status == 200) {
-                        console.log(http.responseText);
-                    }
-                }
-                http.send(params);
+            xhr.onreadystatechange = function () {
+               if (xhr.readyState === 4) {
+                  console.log(xhr.status);
+                  console.log(xhr.responseText);
+               }};
 
+            var data = `{
+             "chat_id":"992164535",
+               "photo":"https://media.istockphoto.com/photos/nahargarh-fort-picture-id635726330?k=20&m=635726330&s=612x612&w=0&h=eiUeGWk-Lufy7z_zb_x4BaEgRDb82VnPkhsTVDQHn0I=";
+               ,
+               "caption":"now that working "
+            }`;
+
+            xhr.send(data);
             
 
 
