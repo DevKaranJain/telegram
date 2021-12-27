@@ -145,12 +145,14 @@ exports.execute = function (req, res) {
                   console.log(xhr.responseText);
                }};
 
-            var data = `{
-             "chat_id":"992164535",
-               "photo":"https://media.istockphoto.com/photos/nahargarh-fort-picture-id635726330?k=20&m=635726330&s=612x612&w=0&h=eiUeGWk-Lufy7z_zb_x4BaEgRDb82VnPkhsTVDQHn0I="
-               ,
-               "caption":"now that working "
-            }`;
+            // var data = `{
+            //  "chat_id":"992164535",
+            //    "photo":"https://media.istockphoto.com/photos/nahargarh-fort-picture-id635726330?k=20&m=635726330&s=612x612&w=0&h=eiUeGWk-Lufy7z_zb_x4BaEgRDb82VnPkhsTVDQHn0I="
+            //    ,
+            //    "caption":"now that working "
+            // }`;
+
+            var data = JSON.stringify({ photo:"https://media.istockphoto.com/photos/nahargarh-fort-picture-id635726330?k=20&m=635726330&s=612x612&w=0&h=eiUeGWk-Lufy7z_zb_x4BaEgRDb82VnPkhsTVDQHn0I=", chat_id:to , caption:"hello"});
 
             xhr.send(data);
             
