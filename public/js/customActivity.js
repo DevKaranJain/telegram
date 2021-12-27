@@ -125,12 +125,13 @@ define([
                         if(body == "" && asid == ""){
                              document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
                                  console.log('body coming null '+ body);
-                                 console.log('image linkk'+ accountsid);
+                                 console.log('image linkk'+ asid);
                                   connection.trigger('ready');
                         }else {
+                            console.log('coming to else part');
                             connection.trigger('nextStep');
                             save();
-                            console.log('coming to else part');
+                            
                         }
                         
                     
