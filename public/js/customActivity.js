@@ -117,10 +117,21 @@ define([
         
                  } else if ( currentStep.key === 'step2')
                  {
+                    console.log('in the step 2 ----------------------------- ');
+                    var body = $('#messageBody').val();
+                    var asid = $('#accountSid').val(); 
+                        if(body == "" && asid == ""){
+                             document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
+                                 console.log('body coming null '+ body);
+                                 console.log('image linkk'+ accountsid);
+                                  connection.trigger('ready');
+                        }else {
+                            connection.trigger('nextStep');
+                            save();
+                            console.log('coming to else part');
+                        }
+                        
                     
-        //            // var b =;
-                    var body = $('#messageBody').val(); 
-                      console.log('in the step 2 ----------------------------- '+body);
                     // if(body == "" )
                     // {
                     //     // document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
@@ -136,8 +147,7 @@ define([
                        //  document.getElementById("test1").innerHTML =body;
                          //document.getElementById("test1").innerHTML =body;
                          //content = document.getElementById("richtext").value;
-                         connection.trigger('nextStep');
-                         save();
+                       
                   //  }
                     
                 }
