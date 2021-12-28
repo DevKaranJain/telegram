@@ -30,9 +30,7 @@
         var con = document.getElementById("messageBody").innerHTML;
             if(con == ""){
                 console.log("con coming null");
-                console.log("con coming with vlaues "+ con);
-               
-                document.getElementById("test1").innerHTML = con;
+            
             }else {
                 console.log("con coming with vlaues "+ con);
                
@@ -208,7 +206,7 @@
                     <div class="slds-form-element" style="width: 50%;"> 
                         <label class="slds-form-element__label" for="textarea-id-01">Enter Text Message :) </label>
                         <div class="slds-form-element__control">
-                        <textarea id="messageBody" placeholder="Enter your text…" class="slds-textarea" onkeypress="getvalues()"></textarea>
+                        <textarea id="messageBody" placeholder="Enter your text…" class="slds-textarea" onkeyup="getvalues()"></textarea>
                         </div>
                         </div>
                 </div>
