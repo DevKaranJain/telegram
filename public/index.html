@@ -10,8 +10,8 @@
     
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
      <link rel="stylesheet" type="text/css" href="/assets/styles/salesforce-lightning-design-system.css" /> 
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  <!-- this is for image card -->
-     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/require.js"></script>
     <script type="text/javascript">
         console.log("in the index file ");
@@ -103,7 +103,23 @@ $(document).ready(function(){
             
             z-index: -1;
           }
-         
+          <!-- .card {
+            border: 0px solid rgba(0,0,0,.125);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            left: 471px;
+            top: 36px;
+          }
+          
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+          
+          .container {
+            padding: 120px 4px;
+            position:absolute;
+          } -->
    </style>
 
   
@@ -210,16 +226,15 @@ $(document).ready(function(){
                    </div>
                      <!-- end here -->
 
-                     <div class="w3-container">
-                        <div class="w3-card-4" style="width:17%;border-radius: 5px">
-                          <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" alt="Alps" style="width:100%">
-                          <div class="w3-container w3-center">
-                            <p>The Italian / Austrian Alps</p>
-                          </div>
+                     <div class="card" id="cards" style="display: none;">
+                        <img src="https://media.gettyimages.com/photos/palace-of-winds-in-jaipur-india-picture-id1079569482?s=612x612" alt="Avatar" style="width:57%; border-radius: 5px 5px 0 0;">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4> 
+                          <p>Architect & Engineer</p> 
                         </div>
                       </div>
                       
-                        <!-- start of show image  -->
+                     <!-- start of show image  -->
 
 
                         
