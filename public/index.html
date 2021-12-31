@@ -64,6 +64,25 @@
           }
         });
 });
+$(document).ready(function(){
+    $('#sele').on('change', function() {
+      if ( this.value == 'text')
+     {
+        $("#one").show();
+        $("#cards").hide();
+      }
+      else if ( this.value == 'Image')
+      {
+        $("#cards").show();
+        $("#chats").hide();
+
+      }
+      else{
+          $("#one").hide();
+           $("#two").hide();
+      }
+    });
+});
        
     </script>
     
