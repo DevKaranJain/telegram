@@ -21,7 +21,7 @@
             };
 
             var dependencies = [
-                'customActivity'        
+                'customActivity'
             ];
 
             require(config, dependencies); 
@@ -42,7 +42,7 @@
         image = document.getElementById("img").value;
         // document.getElementById("outputImage").innerHTML = image;
             console.log(image);
-            document.getElementById("cards").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
+            document.getElementById("imgs").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
             console.log('inside display image');
        }
        $(document).ready(function(){
@@ -78,8 +78,8 @@ $(document).ready(function(){
 
       }
       else{
-          $("#one").hide();
-           $("#two").hide();
+          $("#cards").hide();
+           $("#chats").hide();
       }
     });
 });
@@ -103,7 +103,7 @@ $(document).ready(function(){
             
             z-index: -1;
           }
-          <!-- .card {
+          .card {
             border: 0px solid rgba(0,0,0,.125);
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
@@ -119,7 +119,7 @@ $(document).ready(function(){
           .container {
             padding: 120px 4px;
             position:absolute;
-          } -->
+          }
    </style>
 
   
@@ -144,9 +144,8 @@ $(document).ready(function(){
                             <option value="Email">Email</option>
                         </select>
                     </form>
-
-            </div> 
-         </div>
+                </div> 
+            </div>
 
  
 
@@ -154,8 +153,8 @@ $(document).ready(function(){
          <!-- step  2  -->
 
         <div id="step2" class="step">
-            <div class="slds-text-heading_small instruction"> Send Message / Photo </div>
-                <br>
+                <div class="slds-text-heading_small instruction"> Send Message / Photo </div>
+            <br>
             <!-- enter telegram  authentication details and error -->
                 <div class="form-group" >  
                     <div id = "messageBodyNull"></div> 
@@ -227,10 +226,10 @@ $(document).ready(function(){
                      <!-- end here -->
 
                      <div class="card" id="cards" style="display: none;">
-                        <img src="https://media.gettyimages.com/photos/palace-of-winds-in-jaipur-india-picture-id1079569482?s=612x612" alt="Avatar" style="width:57%; border-radius: 5px 5px 0 0;">
-                        <div class="container">
-                          <h4><b>John Doe</b></h4> 
-                          <p>Architect & Engineer</p> 
+                        <img id="imgs" src="" alt="Avatar" style="width:57%; border-radius: 5px 5px 0 0;">
+                        <div class="container" id="texting">
+                          <!-- <h4><b>John Doe</b></h4> 
+                          <p>Architect & Engineer</p>  -->
                         </div>
                       </div>
                       
@@ -258,7 +257,7 @@ $(document).ready(function(){
                         </div>
                         </div>
                 </div>
-         </div>
+            </div>
 
                 </div>
                     
