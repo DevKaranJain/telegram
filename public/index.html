@@ -21,7 +21,7 @@
             };
 
             var dependencies = [
-                'customActivity'
+                'customActivity'        
             ];
 
             require(config, dependencies); 
@@ -42,7 +42,7 @@
         image = document.getElementById("img").value;
         // document.getElementById("outputImage").innerHTML = image;
             console.log(image);
-            document.getElementById("test1").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
+            document.getElementById("cards").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
             console.log('inside display image');
        }
        $(document).ready(function(){
