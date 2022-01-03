@@ -46,6 +46,11 @@
             document.getElementById("imgs").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
             console.log('inside display image');
        }
+
+       function getcaptions(){
+        cap = document.getElementById("captions").value;
+        document.getElementById("texting").innerHTML = cap;
+       }
        $(document).ready(function(){
         $('#sele').on('change', function() {
           if ( this.value == 'text')
@@ -230,10 +235,10 @@ $(document).ready(function(){
                          <div id="imgs" style="width:57%; border-radius: 5px 5px 0 0;">
 
                          </div>
-                        <img id="imgs" src="" alt="Avatar" style="width:57%; border-radius: 5px 5px 0 0;">
+                        <img id="imgs" src="" style="width:57%; border-radius: 5px 5px 0 0;">
                         <div class="container" id="texting">
-                          <h4><b>John Doe</b></h4> 
-                          <p>Architect & Engineer</p> 
+                          <!-- <h4><b>John Doe</b></h4> 
+                          <p>Architect & Engineer</p>  -->
                         </div>
                       </div>
                       
@@ -280,7 +285,7 @@ $(document).ready(function(){
                         <div class="slds-form-element" style="width: 50%;"> 
                             <label class="slds-form-element__label" for="textarea-id-01">Enter your Captions for Image :) </label>
                             <div class="slds-form-element__control">
-                            <textarea id="captions" placeholder="Caption …" class="slds-textarea"></textarea>
+                            <textarea id="captions" placeholder="Caption …" class="slds-textarea" onkeyup="getcaptions()"></textarea>
                             </div>
                             </div>
                           
