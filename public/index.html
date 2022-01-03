@@ -49,8 +49,10 @@
 
        function getcaptions(){
         cap = document.getElementById("captions").value;
+        console.log("in the captions function ");
         document.getElementById("test2").innerHTML = cap;
        }
+
        $(document).ready(function(){
         $('#sele').on('change', function() {
           if ( this.value == 'text')
