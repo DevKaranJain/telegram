@@ -80,6 +80,7 @@ $(document).ready(function(){
       else if ( this.value == 'Image')
       {
         $("#cards").show();
+        $("#chatse").show();
         $("#chats").hide();
 
       }
@@ -243,6 +244,23 @@ $(document).ready(function(){
                           <p>Architect & Engineer</p>  -->
                         </div>
                       </div>
+                      <div style="display: none;" id="chatse">
+                        <section role="log" class="slds-chat">
+                           <ul class="slds-chat-list">
+                             <li class="slds-chat-listitem slds-chat-listitem_inbound">
+                               <div class="slds-chat-message" style="position: absolute; left: 472px;top: 130px;">
+    
+                                 <!-- <span aria-hidden="true" class="slds-avatar slds-avatar_circle slds-chat-avatar">
+                                   <abbr class="slds-avatar__initials slds-avatar__initials_inverse" title="Salesforce Telegram Bot " style="background-color: black;">SB</abbr>
+                                 </span> -->
+                                 <div class="slds-chat-message__body">
+                                   <div class="slds-chat-message__text slds-chat-message__text_inbound"  id="test1" style="max-width: 180px; word-wrap: break-word; text-align: left; background-color:grey;color:white;"></div>
+                                </div>
+                               </div>
+                             </li>
+                           </ul>
+                         </section>
+                       </div>
                       
                      <!-- start of show image  -->
 
