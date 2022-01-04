@@ -45,18 +45,18 @@ define([
         var attributeArray = data.schema ;
         console.log("Data schema2   " + data.schema);
         console.log("Array of arrtibutes" +  attributeArray);
-        for(var attArray in attributeArray)
+       for(var attArray in attributeArray)
         {
             console.log(attArray);
             var key1 = attributeArray[attArray].key;
-            var Name = attributeArray[attArray].type;
-            if(Name == 'Text'){
+            var phoneValue = attributeArray[attArray].type;
+            if(phoneValue == 'Text'){
                 messengerArray.push(key1);
             }
-           if(phoneValue == 'Phone')
-           {
-             phoneArray.push(key1);  
-           }
+            if(phoneValue == 'Phone')
+            {
+              phoneArray.push(key1);  
+            }
 
             keyArray.push(key1);
            
@@ -66,7 +66,7 @@ define([
         console.log("Key Array----------->" + keyArray);
         console.log("Phone Array----------->" + phoneArray);
         console.log("Messenger Array----------->" + messengerArray);
-     /*   
+       /* 
         console.log(document.getElementById('recipient').innerHTML);
         console.log(document.getElementById('recipient1').innerHTML);
         console.log(document.getElementById('ps').innerHTML);
