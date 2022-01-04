@@ -16,6 +16,13 @@ define([
     var currentStep = steps[0].key;
 
     $(window).ready(onRender);
+    
+    var eventDefinitionKey;
+    var keyArray = [];
+    var phoneArray = [];
+    var messengerArray = [];
+    var selectedPhone; 
+    var phoneArray2 = [];
 
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
@@ -26,11 +33,94 @@ define([
     connection.on('gotoStep', onGotoStep);
     // connection.on('getvalue', getvalues);
 
+    connection.on('requestedInteraction', function(settings)
+    {
+        eventDefinitionKey = settings.triggers[0].metaData.eventDefinitionKey;
+        console.log( "eventDefinitionKey----->" + eventDefinitionKey);
+    });
+
+    connection.on('requestedSchema', function (data) {
+   // save schema
+        console.log('*** Schema ***', JSON.stringify(data['schema']));
+        var attributeArray = data.schema ;
+        console.log("Data schema2   " + data.schema);
+        console.log("Array of arrtibutes" +  attributeArray);
+      /*  for(var attArray in attributeArray)
+        {
+            console.log(attArray);
+            var key1 = attributeArray[attArray].key;
+            var phoneValue = attributeArray[attArray].type;
+            if(phoneValue == 'Text'){
+                messengerArray.push(key1);
+            }
+            if(phoneValue == 'Phone')
+            {
+              phoneArray.push(key1);  
+            }
+
+            keyArray.push(key1);
+           
+        }
+        
+        
+        console.log("Key Array----------->" + keyArray);
+        console.log("Phone Array----------->" + phoneArray);
+        console.log("Messenger Array----------->" + messengerArray);
+        
+        console.log(document.getElementById('recipient').innerHTML);
+        console.log(document.getElementById('recipient1').innerHTML);
+        console.log(document.getElementById('ps').innerHTML);
+        
+        keyArray.forEach(editSelect);
+        phoneArray.forEach(editPhone);
+        messengerArray.forEach(editMessenger);
+        console.log('calling function to set value');
+        setKeyVal(keyArray);
+        console.log('done');
+        function editMessenger(item, index){
+            var phone = item;
+            var res1 = phone.split(".");
+            document.getElementById('recipient1').innerHTML +=  '<option value = "{{' + phone + '}}">'+ res1[2] +'</option>' ; 
+   
+        }
+        function editPhone(item, index)
+        {
+            var phone = item;
+            var res1 = phone.split(".");
+            document.getElementById('recipient').innerHTML +=  '<option value = "{{' + phone + '}}">'+ res1[2] +'</option>' ; 
+        }
+
+        function editSelect(item, index)
+        {
+           var keyValue = item ;  
+         
+            var res = keyValue.split(".");
+            document.getElementById('ps').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
+            var keyValue2 = '{{' + keyValue + '}}';
+            phoneArray2.push(keyValue2);
+        }
+         console.log(document.getElementById('ps').innerHTML);
+        //document.getElementById("recipient").value = selectedPhone;
+        if(phoneArray2.includes(selectedPhone) == true)
+        {
+          document.getElementById("recipient").value = selectedPhone;
+        }
+            */
+        
+      
+
+            
+});
+
+
+    
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
         connection.trigger('ready');
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
+        connection.trigger('requestInteraction');
+        connection.trigger('requestSchema');
     }
 
   function initialize(data) {
