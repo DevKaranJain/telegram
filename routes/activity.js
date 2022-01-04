@@ -141,7 +141,7 @@ exports.execute = function (req, res) {
                   console.log(xhr.responseText);
                }};
              console.log("accountSid --------"+ accountSid);  
-             //accountSid  , caption:authToken
+            
             var data = JSON.stringify({ photo:"https://media.gettyimages.com/photos/palace-of-winds-in-jaipur-india-picture-id1079569482?s=612x612", chat_id:to});   
             xhr.send(data);
         }
