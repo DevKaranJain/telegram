@@ -67,8 +67,8 @@ define([
         console.log("Phone Array----------->" + phoneArray);
         console.log("Messenger Array----------->" + messengerArray);
         
-        console.log(document.getElementById('recipient').innerHTML);
-        console.log(document.getElementById('recipient1').innerHTML);
+       // console.log(document.getElementById('recipient').innerHTML);
+       // console.log(document.getElementById('recipient1').innerHTML);
         console.log(document.getElementById('authToken').innerHTML);
         
         keyArray.forEach(editSelect);
@@ -103,7 +103,7 @@ define([
         //document.getElementById("recipient").value = selectedPhone;
         if(phoneArray2.includes(selectedPhone) == true)
         {
-          document.getElementById("recipient").value = selectedPhone;
+          //document.getElementById("recipient").value = selectedPhone;
         }
             
         
