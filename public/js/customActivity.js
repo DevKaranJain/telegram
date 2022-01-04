@@ -53,10 +53,10 @@ define([
             if(Name == 'Text'){
                 messengerArray.push(key1);
             }
-        //    if(phoneValue == 'Phone')
-        //    {
-        //      phoneArray.push(key1);  
-        //    }
+           if(phoneValue == 'Phone')
+           {
+             phoneArray.push(key1);  
+           }
 
             keyArray.push(key1);
            
