@@ -75,7 +75,7 @@ define([
         phoneArray.forEach(editPhone);
         messengerArray.forEach(editMessenger);
         console.log('calling function to set value');
-        setKeyVal(keyArray);
+        //setKeyVal(keyArray);
         console.log('done');
         function editMessenger(item, index){
             var phone = item;
