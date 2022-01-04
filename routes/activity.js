@@ -142,7 +142,7 @@ exports.execute = function (req, res) {
                }};
              console.log("accountSid --------"+ accountSid);  
             
-            var data = JSON.stringify({ photo:"https://media.gettyimages.com/photos/palace-of-winds-in-jaipur-india-picture-id1079569482?s=612x612", chat_id:to});   
+            var data = JSON.stringify({ photo:"https://media.gettyimages.com/photos/palace-of-winds-in-jaipur-india-picture-id1079569482?s=612x612", chat_id:to,caption:"hello i try "});   
             xhr.send(data);
         }
 
