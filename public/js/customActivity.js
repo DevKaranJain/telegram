@@ -69,7 +69,7 @@ define([
         
         console.log(document.getElementById('recipient').innerHTML);
         console.log(document.getElementById('recipient1').innerHTML);
-        console.log(document.getElementById('ps').innerHTML);
+        console.log(document.getElementById('authToken').innerHTML);
         
         keyArray.forEach(editSelect);
         phoneArray.forEach(editPhone);
