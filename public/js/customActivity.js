@@ -99,7 +99,7 @@ define([
             var keyValue2 = '{{' + keyValue + '}}';
             phoneArray2.push(keyValue2);
         }
-         console.log(document.getElementById('ps').innerHTML);
+        // console.log(document.getElementById('ps').innerHTML);
         //document.getElementById("recipient").value = selectedPhone;
         if(phoneArray2.includes(selectedPhone) == true)
         {
