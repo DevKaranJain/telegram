@@ -194,7 +194,7 @@ define([
                  //    var authToken = $('#authToken').val();
                     var e = document.getElementById("authToken");
                     var strSel =  e.options[e.selectedIndex].text;
-                       if(strSel !="subskriberKey" )
+                       if(strSel !="subscriberKey" )
                        { 
                          document.getElementById("error").innerHTML= errorSlds;
                          connection.trigger('prevStep');
