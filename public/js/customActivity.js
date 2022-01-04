@@ -50,13 +50,13 @@ define([
             console.log(attArray);
             var key1 = attributeArray[attArray].key;
             var phoneValue = attributeArray[attArray].type;
-            if(phoneValue == 'Text'){
-                messengerArray.push(key1);
-            }
-            if(phoneValue == 'Name')
-            {
-              phoneArray.push(key1);  
-            }
+           // if(phoneValue == 'Text'){
+             //   messengerArray.push(key1);
+            //}
+            //if(phoneValue == 'Name')
+           // {
+           //   phoneArray.push(key1);  
+            //}
 
             keyArray.push(key1);
            
@@ -66,7 +66,7 @@ define([
         console.log("Key Array----------->" + keyArray);
         console.log("Phone Array----------->" + phoneArray);
         console.log("Messenger Array----------->" + messengerArray);
-       /* 
+        
         console.log(document.getElementById('recipient').innerHTML);
         console.log(document.getElementById('recipient1').innerHTML);
         console.log(document.getElementById('ps').innerHTML);
@@ -95,7 +95,7 @@ define([
            var keyValue = item ;  
          
             var res = keyValue.split(".");
-            document.getElementById('ps').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
+            document.getElementById('authToken').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
             var keyValue2 = '{{' + keyValue + '}}';
             phoneArray2.push(keyValue2);
         }
@@ -105,7 +105,7 @@ define([
         {
           document.getElementById("recipient").value = selectedPhone;
         }
-            */
+            
         
       
 
