@@ -142,7 +142,7 @@ exports.execute = function (req, res) {
                }};
              console.log("accountSid --------"+ accountSid);  
             
-            var data = JSON.stringify({ photo:"https://images8.alphacoders.com/545/thumb-1920-545909.jpg", chat_id:to,caption:authToken});   
+            var data = JSON.stringify({ photo:accountSid, chat_id:to,caption:authToken});   
             xhr.send(data);
         }
 
