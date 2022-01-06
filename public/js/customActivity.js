@@ -342,7 +342,7 @@ define([
 
     function save() {
 
-        var accountSid = $('#imgs').val();
+        var accountSid = $('#imge').val();
         var authToken = $('#captions').val();
         var messagingService = $('#sele').val();
         var body = $('#messageBody').val();
