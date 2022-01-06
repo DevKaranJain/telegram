@@ -318,7 +318,7 @@ define([
                         //     visible: true
                         // });
                         break;
-                        case 'step3':
+                       // case 'step3':
                     // $('#step3').show();
                     //     console.log("---------------------------------------------------------------------------------------------------------------->This is step 3");
                     //             connection.trigger('updateButton', {
@@ -341,14 +341,14 @@ define([
     
 
     function save() {
-            console.log($('#imge').val());
+         //   console.log($('#imge').val());
         var accountSid = $('#imge').val();
         var authToken = $('#captions').val();
         var messagingService = $('#sele').val();
         var body = $('#messageBody').val();
         //var sele = $('#sele').val();
 
-        console.log("vlaue in sele"+ sele);
+      //  console.log("vlaue in sele"+ sele);
        // console.log("in the save option "+ body);
         
         payload['arguments'].execute.inArguments = [{
