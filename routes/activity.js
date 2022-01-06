@@ -118,7 +118,7 @@ exports.execute = function (req, res) {
     //const txt = requestBody.sele;
         console.log("select option is ---------------------"+type);
       //  console.log('select option is +===='+ requestBody);
-    
+    console.log("account sid is ------ in the "+ accountSid);
    
     console.log('values in to -------------- '+to);
     try{
