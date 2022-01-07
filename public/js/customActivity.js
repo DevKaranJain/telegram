@@ -209,6 +209,7 @@ define([
                  } else if ( currentStep.key === 'step2')
                  {
                     console.log('in the step 2 ----------------------------- ');
+                    console.log("preview image ---------------------"+  $('#imges').val());
                     var body = $('#messageBody').val();
                     var asid = $('#accountSid').val(); 
                     var capt = $('#authToken').val(); 
