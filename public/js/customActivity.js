@@ -216,10 +216,11 @@ define([
                     console.log("body--------"+body);
                     console.log("image link----"+ asid);
                         if(body==='' && asid === undefined){
-                             document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
+                             //document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
                                  console.log('body coming null '+ body);
                                  console.log('image linkk'+ asid);
-                                  connection.trigger('ready');
+                                 connection.trigger('nextStep');
+                                //  connection.trigger('ready');
                          }else {
                             console.log('coming to else part');
                             connection.trigger('nextStep');
