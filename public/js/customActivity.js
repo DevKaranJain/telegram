@@ -345,7 +345,7 @@ define([
 
     function save() {
          //   console.log($('#imge').val());
-        var accountSid = $('#imge').val();
+        var accountSid = $('#imges').val();
         var authToken = $('#captions').val();
         var messagingService = $('#sele').val();
         var body = $('#messageBody').val();

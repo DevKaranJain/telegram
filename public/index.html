@@ -39,11 +39,11 @@
             }
        }
        function getimage(){
-        image = document.getElementById("imge").value;
+        image = document.getElementById("imges").value;
         
         // document.getElementById("outputImage").innerHTML = image;
             console.log(image);
-            document.getElementById("imgs").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
+            document.getElementById("texting").innerHTML = '<img src=" ' + image + ' " alt="Girl in a jacket" width="180px" height="50%"></img> ';
             console.log('inside display image');
        }
 
@@ -239,10 +239,10 @@ $(document).ready(function(){
                      <!-- end here -->
 
                      <div class="card" id="cards" style="display: none;">
-                         <div id="imgs" style="width:57%; border-radius: 5px 5px 0 0;">
+                         <div id="waiting" style="width:57%; border-radius: 5px 5px 0 0;">
 
                          </div>
-                        <img id="imgs" src="" style="width:57%; border-radius: 5px 5px 0 0;">
+                        <!-- <img id="imgs" src="" style="width:57%; border-radius: 5px 5px 0 0;"> -->
                         <div class="container" id="texting">
                           <!-- <h4><b>John Doe</b></h4> 
                           <p>Architect & Engineer</p>  -->
@@ -299,7 +299,7 @@ $(document).ready(function(){
                         <div class="slds-form-element" style="width: 50%;"> 
                             <label class="slds-form-element__label" for="textarea-id-01">Paste your link here :) </label>
                             <div class="slds-form-element__control">
-                            <textarea id="imge" placeholder="Image Link..." class="slds-textarea" onkeyup="getimage()"></textarea>
+                            <textarea id="imges" placeholder="Image Link..." class="slds-textarea" onkeyup="getimage()"></textarea>
                             </div>
                             </div>
                         <!-- <input id= "img" type="text" name="image"   /><br><br> -->
