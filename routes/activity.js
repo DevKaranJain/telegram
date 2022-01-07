@@ -130,6 +130,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
+            console.log("captions coming that --- "+ captions);
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "https://api.telegram.org/bot2026995123:AAGyuZHQ5nwaD2zzML0K3bzsRmngMBXBEj4/sendPhoto?");
