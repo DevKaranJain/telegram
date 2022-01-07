@@ -95,7 +95,7 @@ define([
            var keyValue = item ;  
          
             var res = keyValue.split(".");
-            document.getElementById('authToken').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
+            document.getElementById('Token').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
             var keyValue2 = '{{' + keyValue + '}}';
             phoneArray2.push(keyValue2);
         }
@@ -149,6 +149,7 @@ define([
 
                 if (key === 'authToken') {
                     $('#authToken').val(val);
+                    console.log($('#authToken').val(val));
                 }
 
                  if (key === 'messagingService') {
