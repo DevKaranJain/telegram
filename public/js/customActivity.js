@@ -193,7 +193,7 @@ define([
                     
                  //  var accountSid = $('#accountSID').val();
                  //    var authToken = $('#authToken').val();
-                    var e = document.getElementById("authToken");
+                    var e = document.getElementById("Token");
                     var strSel =  e.options[e.selectedIndex].text;
                        if(strSel !="subscriberKey" )
                        { 
