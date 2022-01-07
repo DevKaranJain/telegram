@@ -69,7 +69,7 @@ define([
         
        // console.log(document.getElementById('recipient').innerHTML);
        // console.log(document.getElementById('recipient1').innerHTML);
-        console.log(document.getElementById('authToken').innerHTML);
+      //  console.log(document.getElementById('authToken').innerHTML);
         
         keyArray.forEach(editSelect);
         phoneArray.forEach(editPhone);
@@ -95,7 +95,7 @@ define([
            var keyValue = item ;  
          
             var res = keyValue.split(".");
-            document.getElementById('authToken').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
+            document.getElementById('messagingService').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
             var keyValue2 = '{{' + keyValue + '}}';
             phoneArray2.push(keyValue2);
         }
