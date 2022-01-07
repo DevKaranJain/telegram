@@ -210,6 +210,9 @@ define([
                     console.log('in the step 2 ----------------------------- ');
                     var body = $('#messageBody').val();
                     var asid = $('#accountSid').val(); 
+                    var capt = $('#authToken').val(); 
+                    
+                    console.log("captions coming that --- "+ capt);
                     console.log("body--------"+body);
                     console.log("image link----"+ asid);
                         if(body==='' && asid === undefined){
