@@ -210,6 +210,7 @@ define([
                  {
                     console.log('in the step 2 ----------------------------- ');
                     console.log("preview image ---------------------"+  $('#imges').val());
+                    var cimg = $('#imges').val();
                     var body = $('#messageBody').val();
                     var asid = $('#accountSid').val(); 
                     var capt = $('#authToken').val(); 
@@ -217,7 +218,7 @@ define([
                     console.log("captions coming that --- "+ capt);
                     console.log("body--------"+body);
                     console.log("image link----"+ asid);
-                        if(body==='' && asid === undefined){
+                        if(body==='' && cimg === undefined){
                              document.getElementById("messageBodyNull").innerHTML = messageBodyerrorSlds;
                                  console.log('body coming null '+ body);
                                  console.log('image linkk'+ asid);

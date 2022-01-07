@@ -108,8 +108,8 @@ exports.execute = function (req, res) {
 
 
     var requestBody = req.body.inArguments[0];
-    var uniqueEmail = req.body.keyValue;
-    console.log(uniqueEmail);
+   // var uniqueEmail = req.body.keyValue;
+   
     const accountSid = requestBody.accountSid;
     const authToken = requestBody.authToken;
     const to = requestBody.to;
@@ -130,7 +130,7 @@ exports.execute = function (req, res) {
             .catch(console.err)
         }
         else if(type == "Image"){
-            
+            var simg = $('#imges').val();
             var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "https://api.telegram.org/bot2026995123:AAGyuZHQ5nwaD2zzML0K3bzsRmngMBXBEj4/sendPhoto?");
@@ -143,7 +143,7 @@ exports.execute = function (req, res) {
                }};
              console.log("accountSid --------"+ accountSid);  
             
-            var data = JSON.stringify({ photo:"https://image.s11.sfmc-content.com/lib/fe2911717164057a7d1078/m/1/a81b8e54-9e4d-45dd-99c0-4b9f4212d148.jpg", chat_id:to,caption:authToken});   
+            var data = JSON.stringify({ photo:simg, chat_id:to,caption:authToken});   
             xhr.send(data);
         }
 
