@@ -143,7 +143,7 @@ exports.execute = function (req, res) {
                }};
              console.log("accountSid --------"+ accountSid);  
             
-            var data = JSON.stringify({ photo:"", chat_id:to,caption:authToken});   
+            var data = JSON.stringify({ photo:"https://image.s11.sfmc-content.com/lib/fe2911717164057a7d1078/m/1/a81b8e54-9e4d-45dd-99c0-4b9f4212d148.jpg", chat_id:to,caption:authToken});   
             xhr.send(data);
         }
 
