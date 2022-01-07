@@ -95,7 +95,7 @@ define([
            var keyValue = item ;  
          
             var res = keyValue.split(".");
-            document.getElementById('messagingService').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
+            document.getElementById('authToken').innerHTML +=  '<option value = "{{' + keyValue + '}}">'+ res[2] +'</option>' ; 
             var keyValue2 = '{{' + keyValue + '}}';
             phoneArray2.push(keyValue2);
         }

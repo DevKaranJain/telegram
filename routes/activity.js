@@ -143,7 +143,7 @@ exports.execute = function (req, res) {
                }};
              console.log("accountSid --------"+ accountSid);  
             
-            var data = JSON.stringify({ photo:accountSid, chat_id:to,caption:authToken});   
+            var data = JSON.stringify({ photo:"", chat_id:to,caption:authToken});   
             xhr.send(data);
         }
 
